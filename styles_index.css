@@ -1,0 +1,477 @@
+:root{
+--font-family: 'Courier New', Courier, monospace;
+}
+*{
+    box-sizing: border-box;
+    padding:0rem;
+    margin:0rem;
+}
+#Body{
+    background-color:#f8f9fa;
+}
+#Toast_Header{
+    background:red;
+    color:white;
+    font-family:var(--font-family);
+}
+#Toast_Body{
+    background:#dee2e6;
+    color:rgb(0, 0, 0);
+    font-family:var(--font-family);
+}
+/*HEADER*/
+.Header{
+    background:#3498DB;
+    font-family:var(--font-family);
+    color:rgb(255, 255, 255);
+    border-bottom: 0.5rem solid black;
+    border-bottom-style: solid;
+}
+#BOTON_MENU{
+    color: rgb(0, 0, 0);
+}
+.Sub-Botones{
+    color:black;
+}
+.Sub-Botones:hover{
+
+    color:black;
+    cursor:default;
+}
+#Botones li>a{
+    color:black;
+    text-align: start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    text-align: start;
+    align-items: center;
+}
+#Botones li>a:hover{
+    color:black;
+    background-color:#2ECC71;
+    transition: all 0.4s linear;
+    border-radius: 0.5rem;
+}
+#btn_login{
+    background-color: #E74C3C;
+    margin-right: 0.7rem;
+    color: rgb(0, 0, 0);
+}
+#btn_sing-up{
+    background-color:#F1C40F;
+    margin-right: 0.7rem;
+    color: rgb(0, 0, 0);
+}
+#btn_Tienda{
+    background-color: #E67E22;
+    margin-right: 0.7rem;
+    color: rgb(0, 0, 0);
+}
+
+             /*TEXTO AL LADO DE LA IMAGEN*/
+.container-fluid> a{
+    text-decoration: none;
+    color: #000000;
+}
+             /*BOTONES DEL HEADER*/
+#navbarNav .navbar-nav .nav-item a{
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    background:#7DCEA0;
+    border: 0.2rem solid #fff;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+#navbarNav .navbar-nav .nav-item a:hover {
+    background:#00ff6e;
+    text-decoration: rgb(8, 25, 41);
+    color:rgb(0, 0, 0);
+    border-style: dotted;
+}
+
+#navbarNav .navbar-nav .dropdown .dropdown-menu{
+    background:#bdbdbd;
+    padding: 0.2rem 0.5rem 0.6rem 0.5rem;
+} 
+.dropdown-divider{
+    color:#000000;
+}
+     /*BOTONES DENTRO DEL BOTON*/
+#navbarNav .navbar-nav .dropdown .dropdown-menu .dropdown-item{
+    border-radius: 0rem;
+    text-align: start;
+    margin: 0.5rem 0rem 0rem 0rem;
+    background:#bbff00;
+    border: 0.2rem solid rgb(255, 0, 0);
+}
+#navbarNav .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover{
+    color:rgb(0, 0, 0);
+    border-style: dotted;
+
+}
+    
+#navbarNav .navbar-nav .nav-item {
+    padding:0rem 2rem 0rem 1.5rem;
+}
+
+.navbar-brand img{
+    width:5rem;
+    height:5rem;
+}
+                    /*MAIN*/
+.TITULO_PRINCIPAL{
+    margin-top: 6.5rem;
+    display: block;
+    background-color: #5DADE2;
+    color: rgba(12, 11, 11, 0.966);
+    font-size: 2rem;
+    text-align: center;
+    height: auto;
+    width:auto;
+    padding: 1rem;
+    border: 1.5rem  #212529;
+    border-style: double;
+    letter-spacing: 0.8rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  text-shadow: 0 1px 0 #212529, 
+               0 2px 0 #212529,
+               0 3px 0 #212529,
+               0 4px 0 #212529,
+               0 5px 8px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 30px rgba(45, 50, 214, 0.15);
+}
+.TITULO_PRINCIPAL .lapiz{
+   font-size: 2.3rem;
+}
+#BTN_OSCURO{
+    background:rgb(255, 255, 255);
+    transition: all 0.4s linear;
+    color: rgb(0, 0, 0);
+    height: 2.2rem;
+    
+}
+#BTN_OSCURO:hover{
+    background:black;
+    transition: all 0.4s linear;
+    color:rgb(255, 255, 255);
+}
+
+#Titulo1{
+    font-family:var(--font-family);
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg,  #3498DB 0%, rgb(111, 19, 168) 35%, #343a40 100%);
+    color: rgb(255, 251, 251);
+}
+#Titulo2{
+    font-family:var(--font-family);
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg,  #3498DB 0%, rgb(111, 19, 168) 35%, #343a40 100%);
+    color: rgb(255, 251, 251);
+
+}
+#Titulo3{
+    font-family:var(--font-family);
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg,  #3498DB 0%, rgb(111, 19, 168) 35%, #343a40 100%);
+    color: rgb(255, 251, 251);
+}
+#main .container-fluid{
+    border: 0.3rem solid rgb(0, 0, 0);
+}
+#main .container-fluid .row> .col{
+    border: 0.2rem solid rgb(0, 0, 0);
+}
+#main .container-fluid .row .columna1{
+    padding: 0.8rem;
+}
+.columna1{
+    color: black;
+    font-family:var(--font-family);
+}
+#Titulo1_1{
+    color: black;
+    font-family:var(--font-family);
+}
+#Texto1{
+    color: black;
+    font-family:var(--font-family);
+}
+#Titulo1_2{
+    color: black;
+    font-family:var(--font-family);
+}
+#Texto2{
+    color: black;
+    font-family:var(--font-family);
+}
+#Texto3{
+    color: black;
+    font-family:var(--font-family);
+}
+.columnaimg {
+  align-items: center;
+}
+.columnaimg img{
+    margin-top: 1rem;
+    width: 13rem;
+    height:12rem;
+}
+.columnaimg2 img{
+    margin-top: 1rem;
+    width: 14rem;
+    height:12rem;
+}
+.columnaimg3 img{
+    margin-top: 1rem;
+    width: 13rem;
+    height:12rem;
+    margin-bottom:1rem;
+}
+.Titulos{
+    display: flex;
+}
+#Card_Tittle{
+    font-family:var(--font-family);
+    color: black;
+}
+#Card_Tittle:hover{
+    background-color: #2E86C1;
+    border-radius:1rem;
+    transition: all 0.4s linear;
+    cursor:default;
+}
+#Card_Tittle2{
+    font-family:var(--font-family);
+    color: black;
+}
+#Card_Tittle2:hover{
+    background-color: #3498DB;
+    border-radius:1rem;
+    transition: all 0.4s linear;
+    cursor:default;
+}
+#Card_Tittle3{
+    font-family:var(--font-family);
+    color: black;
+}
+#Card_Tittle3:hover{
+    background-color: #5DADE2;
+    border-radius:1rem;
+    transition: all 0.4s linear;
+    cursor:default;
+}
+#Card_Tittle4{
+    font-family:var(--font-family);
+    color: black;
+}
+#Card_Tittle4:hover{
+    background-color: #85C1E9;
+    border-radius:1rem;
+    transition: all 0.4s linear;
+    cursor:default;
+}
+#Card_Tittle5{
+    font-family:var(--font-family);
+    color: black;
+}
+#Card_Tittle5:hover{
+    background-color: #AED6F1;
+    border-radius:1rem;
+    transition: all 0.4s linear;
+    cursor:default;
+}
+#Card_Tittle6{
+    font-family:var(--font-family);
+    color: black;
+}
+#Card_Tittle6:hover{
+    background-color: #D6EAF8;
+   border-radius:1rem;
+    transition: all 0.4s linear;
+    cursor:default;
+}
+#Cartext{
+    color: black;
+    font-family:var(--font-family);
+}
+#Cartext2{
+    color: black;
+    font-family:var(--font-family);
+}
+#Cartext3{
+    color: black;
+    font-family:var(--font-family);
+}
+#Cartext4{
+    color: black;
+    font-family:var(--font-family);
+}
+#Cartext5{
+    color: black;
+    font-family:var(--font-family);
+}
+#Cartext6{
+    color: black;
+    font-family:var(--font-family);
+}
+#Caricon{
+    color: black;
+}
+#Caricon2{
+    color: black;
+}
+#Caricon3{
+    color: black;
+}
+#Caricon4{
+    color: black;
+}
+#Caricon5{
+    color: black;
+}
+#Caricon6{
+    color: black;
+}
+
+#tecnicas div {
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+#tecnicas .COLUMNAS div> {
+    border: 0.5rem solid #fff;
+}
+/*FOOTER*/
+#Redes_Sociales{
+   font-family:var(--font-family);
+   background:#AED6F1;
+}
+#Comentario{
+  font-family:var(--font-family);
+  background:#AED6F1;
+}
+#Suguerencias{
+ font-family:var(--font-family);
+ background:white;
+ color: black;
+}
+.Footer_Intermedio{
+    font-family:var(--font-family);
+    background:#5DADE2;
+}
+#Sub-Footer{
+    font-family:var(--font-family);
+    background:#3498DB;
+    color: black;
+}
+#Sub-Footer:hover{
+    transition: all 0.5s linear;
+    color: #ff0000;
+    cursor: default;
+}
+#Titulo_footer{
+    font-family:var(--font-family);
+    color: rgb(0, 0, 0);
+}
+#Titulo_footer:hover{
+    transition: all 0.5s linear;
+    color: #ffffff;
+    cursor:default;
+}
+#Titulo_footer2{
+    font-family:var(--font-family);
+    color: rgb(0, 0, 0);
+}
+#Titulo_footer2:hover{
+    transition: all 0.5s linear;
+    color: #ffffff;
+    cursor:default;
+}
+#Titulo_footer3{
+    font-family:var(--font-family);
+    color: rgb(0, 0, 0);
+}
+#Titulo_footer3:hover{
+    transition: all 0.5s linear;
+    color: #ffffff;
+    cursor:default;
+}
+#Titulo_footer4{
+    font-family:var(--font-family);
+    color: rgb(0, 0, 0);
+}
+#Titulo_footer4:hover{
+    transition: all 0.5s linear;
+    color: #ffffff;
+    cursor:default;
+}
+#Titulo_footer5{
+    font-family:var(--font-family);
+    color: rgb(0, 0, 0);
+}
+#Titulo_footer5:hover{
+    transition: all 0.5s linear;
+    color: #ffffff;
+    cursor:default;
+}
+.Comentario textarea{
+    margin:0rem 0.5rem 1rem 0.5rem ;
+}
+#BTN_ENVIAR{
+    transition: all 0.4s linear;
+    background-color:#20a758;
+    color:white;
+}
+#BTN_ENVIAR:hover{
+    transition: all 0.4s linear;
+    background-color:#07dd60;
+    
+    color:white;
+}
+#Columna_footer0>p{
+    color: black;
+}
+#Columna_footer>p{
+    color: black;
+}
+#Columna_footer2>p{
+    color: black;
+}
+#Columna_footer3>P{
+    color: black;
+}
+#Columna_footer4>P{
+    color: black;
+}
+#Columna_footer0>p:hover{
+    transition: all 0.4s linear;
+    color: #ffffff;
+    cursor:default;
+}
+#Columna_footer>p:hover{
+    transition: all 0.4s linear;
+    color: #ffffff;
+    cursor:default;
+}
+#Columna_footer2>p:hover{
+    transition: all 0.4s linear;
+    color: #ffffff;
+    cursor:default;
+}
+#Columna_footer3>P:hover{
+    transition: all 0.4s linear;
+    color: #ffffff;
+    cursor:default;
+}
+#Columna_footer4>P:hover{
+    transition: all 0.4s linear;
+    color: #ffffff;
+    cursor:default;
+}
