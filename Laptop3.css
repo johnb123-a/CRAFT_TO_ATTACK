@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body{
+  background: #f1f1f1;
+}
+
+.Header h1{
+  display: block;
+  background-color: rgb(255, 0, 0);
+  font-size: 1.1rem;
+  text-align: center;
+  align-items: center;
+  height: auto;
+  width:auto;
+  min-width: 45rem;    
+  padding: 1.5rem;
+  border: 1.5rem  rgb(0, 0, 0);
+  border-style: double;
+  letter-spacing: 0.8rem;
+}
+.dark-mode-button{
+  padding: 0rem 0rem 0rem 1rem;
+  font-size: 1.5rem;
+  transition: all 0.4s linear;
+  color:rgb(0, 0, 0);
+  cursor: pointer;
+}
+.dark-mode-button:hover{
+  color: white;
+  cursor: pointer;
+}
+ 
+.container{
+  border: 0.5rem solid rgb(0, 0, 0);
+  margin: 1rem;
+  width: auto;
+  min-width: 45rem;     
+  height: auto;
+  display: grid;
+  grid-template-columns:50% 50%;
+}
+.recuperar{
+cursor: pointer;
+}
+ 
+.container2{
+  padding: 2rem;
+  position: relative;
+  background-color: rgb(200, 202, 204);
+  display: grid;
+  grid-template-columns:100%; 
+}
+.container2 {
+ text-align:center;
+ font-size: 1.2rem;
+}
+.container2 input{
+  width: auto;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: 0.2rem solid #a8a8a8;
+  color: rgb(0, 0, 0);
+}
+.container2 .boton{
+  width: auto;
+  padding: 0.8rem;
+  background: #09ff00;
+  color: #fff;
+  font-size: 12px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+.container2 .boton:hover{
+
+  background: #10b601;
+  transition: all 0.4s linear;
+  color: #fff;
+  border-radius: 1rem;
+}
+.recuperar{
+  color: #000000;
+  font-size: 1.1rem;
+}
+/*.recuperar i>i{
+  color: #000000;
+}*/
+.recuperar:hover{
+  color: #ff0000;
+  transition: all 0.4s linear;
+}
+
+.login{
+  background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
+  padding: 1.5rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns:100%; 
+}
+ 
+.login h1{
+  color: rgb(0, 0, 0);
+  margin-bottom: 0.5rem;
+  text-align: start;
+}
+ 
+.login button i{
+  display: inline-block;
+  font-size:1.4rem;
+  padding-left:1rem;
+}
+ 
+.login button{
+  display: inline-block;
+  width: 90%;
+  margin: 0.8rem;
+  padding: 1rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  cursor: pointer;
+  position: relative;
+  font-size: 1rem;
+}
+ 
+.login .fb{
+  background: #3b5999;
+  border-style: none;
+  color: #fff;
+}
+.login .fb:hover{
+  background: #486ec2;
+  border-style: none;
+  color: #fff;
+  border-radius: 1rem;
+  transition: all 0.4s linear;
+}
+ 
+.login .tw{
+  background: #55acef;
+  border-style: none;
+  color: #fff;
+}
+.login .tw:hover{
+  background: #65bafb;
+  border-style: none;
+  color: #fff;
+  border-radius: 1rem;
+  transition: all 0.4s linear;
+}
+ 
+.login .google{
+  background: #ff3300;
+  border-style: none;
+  color: #fff;
+}
+.login .google:hover{
+  background: #fb4c20;
+  border-style: none;
+  color: #fff;
+  border-radius: 1rem;
+  transition: all 0.4s linear;
+}
+ 

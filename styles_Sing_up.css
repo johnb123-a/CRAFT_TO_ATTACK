@@ -1,0 +1,92 @@
+:root{
+--font-family: 'Courier New', Courier, monospace;
+}
+*{
+    box-sizing: border-box;
+    padding:0rem;
+    margin:0rem;
+}
+#Body{
+    background-color:#f8f9fa;
+}
+.Header{
+    background:#3498DB;
+    font-family:var(--font-family);
+
+}
+#Devolver{
+    background-color: #dc3545;
+    color:white;
+}
+#Devolver:hover{
+    transition: all 0.4s linear;
+    background-color: #ff1900;
+    color:white;
+}
+#Marca{
+    color:rgb(0, 0, 0);
+    cursor: default;
+    font-size:1.1rem;
+    margin-left: -0rem;
+}
+#Item{
+    color:rgb(0, 0, 0);
+}
+#dark-mode{
+  background-color:rgb(255, 255, 255);
+}
+#MOD_DARK{
+    color:rgb(0, 0, 0);
+    Cursor:pointer;
+}
+#dark-mode:hover{
+    transition: all 0.4s linear;
+    border-radius: 0.8rem;
+}
+/*FORMULARIO*/
+#sigup-correo,#sigup-password,#sigup-password2{
+    background:#ced4da;
+    color:black;
+}
+#Label-correo,#Label-pw,#Label-pw2{
+    color:black;
+    font-family:var(--font-family);
+}
+#Advertencia{
+    color:#6c757d;
+    font-family:var(--font-family);
+}
+#Cuenta{
+    color:black;
+    font-family:var(--font-family);
+}
+#Cuenta:hover{
+    color:#0d6efd;
+    transition: all 0.4s linear;
+}
+#Boton_Sing_up{
+    background: #2ECC71;
+    color:black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Boton_Sing_up:hover{
+    background: #58D68D;
+    transition: all 0.4s linear;
+    border-radius: 0.8rem;
+}
+#Boton_Clean{
+    background: #ffd900;
+    color:black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Boton_Clean:hover{
+     background: #fdc315;
+    transition: all 0.4s linear;
+    border-radius: 0.8rem;
+}
+/*FOOTER*/
+
+#Sub-Footer{
+    background: #3498DB;
+    color:black;
+}

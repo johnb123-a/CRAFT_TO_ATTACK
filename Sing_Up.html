@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAFT TO ATTACK ⚔️</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/m66Mn6d/logoof.png">
+    <!-- BOOSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles_Sing_up.css">
+    <link rel="stylesheet" href="Dark_Mode2.css">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="nofollow">
+
+    <!-- Rediseña los Alerts-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</head>
+<body id="Body">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm Header">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Navbar brand -->
+                <a id="Devolver" class="btn btn-floating me-2 " href="index.html" role="button">
+                    <i class="fas fa-arrow-circle-left fa-lg"></i>
+                </a>
+                <a id="Marca" class="navbar-brand pe-1">
+                    <img src="https://i.ibb.co/N1031M7/logoof.png" alt="Logo de la empresa" class="d-inline-block" width="65rem" height="65rem">
+                    <b>CRAFT TO ⚔️</b>
+                </a>
+                <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="Item" class="nav-link disabled" aria-disabled="true"><b>Que estas esperando para unirte al ataque</b></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item pe-3">
+                            <button id="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')" class="btn px-3"><label for="dark-mode" class="dark-mode-button">
+                            <i id="MOD_DARK" class="fas fa-sun fa-lg"></i>
+                           </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-xxl">
+            <form id="FORMULARIO">
+                <!-- Email input -->
+            
+                <div class="form-outline mt-5 mb-4 me-4 ms-4">
+                    <input type="email" id="sigup-correo" class="form-control" autocomplete="email" required/>
+                    <label id="Label-correo"class="form-label" for="form1Example1">Email address</label>
+            
+                </div>
+                <!-- Password input -->
+                <div class="form-outline me-4 ms-4">
+                    <input type="password"  id="sigup-password" class="form-control" aria-describedby="textExample2" />
+                    <label id="Label-pw" class="form-label" for="formTextExample2">Password</label>
+                </div>
+                <div class="ms-4 mb-2">
+                    <span id="Advertencia" class="form-text"> Must be 6-20 characters long. </span>
+                </div>
+                <div class="form-outline me-4 ms-4">
+                    <input type="password" id="sigup-password2" class="form-control" aria-describedby="textExample2" />
+                    <label id="Label-pw2" class="form-label" for="formTextExample2">Confirm Password</label>
+                </div>
+
+                <div class=" d-flex align-items-center justify-content-center mt-3 mb-3">
+                    <a id="Cuenta" href="Login.html"><b><i>¿Ya tienes una cuenta <i class="fas fa-user cuenta"></i>?</i></b></a>
+                </div>
+
+                <!-- Submit button -->
+                <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                    <li class="nav-item me-4 ms-4 mb-3" role="presentation">
+                        <button id="Boton_Sing_up" type="submit" class="btn btn-block" ><b>Sing-Up</b></button>
+                    </li>
+                    <li class="nav-item me-5 ms-5" role="presentation">
+                        <button id="Boton_Clean" type="reset"  class="btn btn-block"><b>Clean </b></button>
+                    </li>
+                </ul>
+
+            </form>
+        </div>
+    </main>
+    <footer  class="text-center fixed-bottom">
+        <!-- Copyright -->
+        <div  id="Sub-Footer" class="text-center p-3" >
+            <i class="far fa-copyright fa-lg"></i><b>2021 Copyright: CRAFT TO ATTACK</b>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+                                                     <!-- FIREBASE SCRITPS-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!--<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>-->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAAA4R2UkACFqX8Tjb-f-xHp_G3kbMaR84",
+            authDomain: "craft-to-attack.firebaseapp.com",
+            projectId: "craft-to-attack",
+            storageBucket: "craft-to-attack.appspot.com",
+            messagingSenderId: "276535282271",
+            appId: "1:276535282271:web:9f69b53afe4175e5cce9ea",
+            measurementId: "G-42GTETXQX7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        //firebase.analytics();
+        const auth=firebase.auth();
+        const fs = firebase.firestore();
+
+    </script>
+    
+                                             <!--BOOSTRAP SCRITPS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

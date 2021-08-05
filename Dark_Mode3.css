@@ -1,0 +1,72 @@
+html.dark-mode #Body{
+    background-color:#212529;
+}
+/*HEADER*/
+html.dark-mode .Header{
+  background:rgba(27, 175, 145, 0.895);
+
+}
+html.dark-mode #Devolver{
+    background-color: #dc3545;
+    color:white;
+}
+html.dark-mode #Devolver:hover{
+    transition: all 0.4s linear;
+    background-color: #ff1900;
+    color:white;
+}
+html.dark-mode #Marca{
+    color:rgb(0, 0, 0);
+    cursor: default;
+    font-size:1.1rem;
+    margin-left: -0rem;
+}
+html.dark-mode #Item{
+    color:rgb(0, 0, 0);
+}
+html.dark-mode #dark-mode{
+  background-color:rgb(255, 255, 255);
+}
+html.dark-mode #MOD_DARK{
+    color:rgb(0, 0, 0);
+    Cursor:pointer;
+}
+
+/*FORMULARIO*/
+html.dark-mode #login-correo{
+  background:#e8eaec;
+  color:black;
+} 
+html.dark-mode #login-password{
+  background:#e8eaec;
+  color:black;
+} 
+html.dark-mode #Label-correo,#Label-pw{
+    color:rgb(92, 92, 92);
+    font-family:var(--font-family);
+}
+html.dark-mode #Recuperacion{
+  color:white;
+  font-family:var(--font-family);
+  cursor: pointer;
+}
+html.dark-mode  #Recuperacion:hover{
+  color:#2ECC71;
+  transition: all 0.4s linear;
+}
+html.dark-mode #Boton_Login{
+  background: #3498DB;
+  color:black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html.dark-mode #Boton_Login:hover{
+  background: #5DADE2;
+  transition: all 0.4s linear;
+  border-radius: 0.8rem;
+}
+/*ACCEDEER CON*/
+html.dark-mode .TITULO{
+  background: #A9DFBF;
+  color:black;
+  font-family:var(--font-family);
+}

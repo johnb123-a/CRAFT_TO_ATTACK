@@ -1,0 +1,55 @@
+:root{
+--font-family: 'Courier New', Courier, monospace;
+}
+*{
+    box-sizing: border-box;
+    padding:0rem;
+    margin:0rem;
+}
+#Body{
+    background-color:#f8f9fa;
+}
+
+/*HEADER*/
+.Header{
+    background:#3498DB;
+    font-family:var(--font-family);
+
+}
+#Devolver{
+    background-color: #dc3545;
+    color:white;
+}
+#Devolver:hover{
+    transition: all 0.4s linear;
+    background-color: #ff1900;
+    color:white;
+}
+#Marca{
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    font-size:1.1rem;
+    margin-left: 0rem;
+}
+#BTN_OSCURO{
+    background:rgb(255, 255, 255);
+    transition: all 0.4s linear;
+    color: rgb(0, 0, 0);
+    
+    
+}
+#BTN_OSCURO:hover{
+    background:black;
+    transition: all 0.4s linear;
+    color:rgb(255, 255, 255);
+}
+#texto{
+    margin-top: 5rem;
+    padding:1rem;
+    font-family:var(--font-family);
+    color:rgb(0, 0, 0);
+}
+#Sub-Footer{
+    background: #3498DB;
+    color:black;
+}
