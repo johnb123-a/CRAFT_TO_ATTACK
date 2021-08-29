@@ -105,6 +105,11 @@ function CarritoTotal(){
 
   itemCartTotal.innerHTML = `Total COP ${Total}`
   addLocalStorage()
+  if(Total != 0){
+    document.getElementById('BTN_COMPRAR').style.display='inline';
+  }else{
+    document.getElementById('BTN_COMPRAR').style.display='none';
+  }
 }
 var cont=0;
 var opc=0;
@@ -219,9 +224,7 @@ function addLocalStorage(){
     renderCarrito()
   }
 }*/
-
 function myfunction() {
-
   swal({
   title: "¿ESTAS SEGURO DE REALIZAR LA COMPRA?",
   text: "Elige una opción....",
@@ -232,15 +235,46 @@ function myfunction() {
   })
   .then((willDelete) => {
   if (willDelete) {
-    swal("Estas a un paso de tu compra: ", {
+    swal("GRACIAS POR TU COMPRA HERMOSO ", {
       icon: "success",})
       .then((value) => {
-        document.getElementById('BTN_Tarjeta').style.display='inline';
-        swal("GRACIAS POR TU COMPRA HERMOSO ");
+        bs();
       });
   } else {
-    swal("La compra ha sido cancelada :(");
+   location.reload();
   }
 });
+}
+
+function bs(){
+  var Name=document.getElementById('user-name').textContent;
+  var Email=document.getElementById('user-email').textContent;
+  console.log(Name ,Email);
+  
+   fs.collection("cities").doc("LA").set({
+    name:"h",
+    rmail:"j"
+  })
+  .then(() => {
+    console.log("Document successfully written!");
+  })
+  .catch((error) => {
+    console.error("Error writing document: ", error);
+  });
+  /*var miTabla = document.getElementsByTagName("table");
+  var mitbody = miTabla.getElementsByTagName("tbody");
+  var miFila = mitbody.getElementsByTagName("tr");
+  var miCelda = miFila.getElementsByTagName("td");
+  var miCelda2 = miFila.getElementsByTagName("td");*/
+      /*console.log(("Tabla= "+miTabla.textContent));
+      console.log(("Tboty= "+mitbody.textContent));
+      console.log(("Fila= "+miFila.textContent));
+      console.log(("Celda= "+miCelda.textContent));
+      console.log(("Celda= "+miCelda2.textContent));*/
+      /*var cells = Array.prototype.slice.call(document.getElementById("tableI").getElementsByTagName("td"));
+      for(var i in cells){
+        console.log("My contents is \n" + cells[i].textContent + "\n");
+      }*/
+
 }
 

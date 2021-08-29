@@ -161,6 +161,14 @@
     const fs = firebase.firestore()
 </script>
 <script src="main2.js"></script>
-<script src="Acesso_login.js"></script>
+<script> 
+    auth.onAuthStateChanged((user) => {
+        if (user) {
+            document.getElementById('Tiendabtn').style.display = 'inline';
+        }else {
+            document.getElementById('Tiendabtn').style.display = 'none';
+        }
+    });    
+</script>
 </html>
     

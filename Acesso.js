@@ -1,3 +1,6 @@
+  var userPic= document.getElementById('user-pic');
+  var userName=document.getElementById('user-name');
+  var userEmail=document.getElementById('user-email');
 
 //Comprueba si el usuario si esta logeado o no cada vez que entre o salga un usuario se dispara este auth
 auth.onAuthStateChanged((user) => {
@@ -5,6 +8,7 @@ auth.onAuthStateChanged((user) => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
     console.log('usuario logeado');
+    document.getElementById('Super-Header').style.display='block';
     document.getElementById('Logout').style.display='inline';
     document.getElementById('Login').style.display='none';
     document.getElementById('BTN_CARRO').style.display='inline';
@@ -171,10 +175,26 @@ auth.onAuthStateChanged((user) => {
     document.getElementById('Btn71').style.display='inline';
     document.getElementById('Btn72.1').style.display='none';
     document.getElementById('Btn72').style.display='inline';
+    const user = firebase.auth().currentUser;
+    if (user !== null) {
+        // The user object has basic properties such as display name, email, etc.
+        var displayName = user.displayName;
+        const displayemail = user.email;
+        const photoURL = user.photoURL;
+        userName.textContent = displayName;
+        userEmail.textContent =displayemail;
+        if (photoURL){
+          userPic.style.backgroundImage= 'url('+ photoURL + ')'; 
 
+        }else{
+          userPic.backgroundImage= 'url( /images/profile_placeholder.png)';
+        }
+    }
   } else {
     console.log('usuario no logeado');
     // ...
+    document.getElementById('Tiendabtn').style.display='none';
+
   }
 });
 const logout=document.querySelector('#Logout');

@@ -1,3 +1,4 @@
+
 const botoncandado = document.querySelector('.recuperar')
 botoncandado.addEventListener('click', (e) => {
 
@@ -81,6 +82,7 @@ googleButton.addEventListener('click',e => {
      swal("Ingreso Exitoso! BIENVENIDO","En unos segundos te redirigiremos a nuestra pagina de compras", "success");
      setTimeout(function(){window.location.href="TIENDA.html";},5000)
      console.log('Sesion iniciada con google');
+    
     })
     .catch(err => {
       swal("Ohh no!", "Algo ha sucecido por favor intentalo mas tarde!", "error");
@@ -116,7 +118,6 @@ twitterButton.addEventListener('click',e =>{
     setTimeout(function(){window.location.href="TIENDA.html";},5000)
     swal("Ingreso Exitoso!","BIENVENIDO","En unos segundos te redirigiremos a nuestra pagina de compras", "success");
     console.log('Sesion iniciada con Twitter');
-  
   }).catch(err => {
        swal("Ohh no!", "Algo ha sucecido por favor intentalo mas tarde!", "error");
        console.log(err);

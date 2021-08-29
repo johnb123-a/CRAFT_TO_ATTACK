@@ -10,6 +10,22 @@
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(213,209,209,0.1881127450980392) 43%, rgba(85,85,85,0.5298494397759104) 78%);
   background-attachment: fixed 
 }
+.super-header {
+  background: rgba(100, 100, 100, 0.875);
+  padding: 1rem 1rem 2.5rem 1rem;
+}
+#user-name{
+  color: rgb(255, 255, 255);
+  padding-left: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 7rem;
+  margin-top: -3rem;
+}
+#user-name:hover{
+  color: rgba(27, 175, 145, 0.895);
+  transition: all 0.4s linear;
+  cursor: default;
+}
 .header {
   background: rgba(0, 0, 0, 0.875);
   padding: 1.2rem;
@@ -32,7 +48,14 @@ header, .alert{
  border-radius: 1rem;
 
 }
-
+.demo-avatar{
+  top: 0rem;
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 4rem;
+  border-radius: 1rem;
+}
 
 /*LISTA DESPLEGABLE*/
 .dropdown{

@@ -27,8 +27,12 @@
     <title>CRAFT TO ATTACK ⚔️</title>
 </head>
 <body id="body">
-    
-    <header class="container-fluid position-sticky navbar-expand-sm top-0 header">
+    <header style="display:none" id="Super-Header" class="container-fluid position-sticky navbar-expand-sm fixed-top top-0 super-header">
+        <div id="user-pic" class="demo-avatar"></div>
+        <div id="user-name"></div>
+        <div style="display:none" id="user-email"></div>
+    </header>
+    <header class="container-fluid position-sticky navbar-expand-sm top-0 mt-0 header">
         <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
             <li>
                 <a href="index.html"><i class="fab fa-wolf-pack-battalion wolf"></i></a>
@@ -143,6 +147,7 @@
             <a id="Logout" class="btn_access2" style="display:none" href=""><i class="fas fa-sign-out-alt"></i></a>
         </ul>
     </header>
+    
     <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
         <b>¡Producto Añadido al carrito! <i class="fas fa-check-circle"></i></b>
     </div>
@@ -162,8 +167,10 @@
                         <h5 class="card-title pt-2 text-center">MANILLAS</h5>
                         <img src="https://i.ibb.co/m0H9why/Pulsera.png" class="card-img-top" alt="Manilla">
                         <div class="card-body">
-                            <p class="card-text first_description">Some quick example text to build on the card
-                                title and make up the bulk of the card's content</p>
+                            <p class="card-text first_description">Las manillas CTA son los accesorios perfectos
+                                 para complementar tu look y pueden ser un elemento de protección. 
+                                 Son productos hechos a mano, personalizables y de gran calidad. 
+                                 Disponibilidad en todos los colores, modelos y diseños.</p>
                         </div>
                     </div>
                 </div>
@@ -173,8 +180,11 @@
                         <h5 class="card-title pt-2 text-center">MANILLAS PAREJAS</h5>
                         <img src="https://i.ibb.co/26wjJmt/Manillas-parejas.png" class="card-img-top" alt="Manillas para parejas">
                         <div class="card-body">
-                            <p class="card-text first_description">Some quick example text to build on the card
-                                title and make up the bulk of the card's content</p>
+                            <p class="card-text first_description">¿Qué mejor regalo para tu pareja que una manilla? Con la que puedas recordar que siempre
+                                estarán el uno para el otro, a pesar de la distancia.<br>
+                                Nuestras manillas para parejas son tu mejor opción, traemos variedad de diseño y precios. 
+                                También personalizamos si deseas.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -195,8 +205,10 @@
                         <h5 class="card-title pt-2 text-center">ATRAPASUEÑOS</h5>
                         <img src="https://i.ibb.co/7JCnyDW/Atrapasue-os.png" class="card-img-top" alt="Atrapasueños">
                         <div class="card-body">
-                            <p class="card-text first_description">Some quick example text to build on the card
-                                title and make up the bulk of the card's content</p>
+                            <p class="card-text first_description">Son objetos en forma de círculo relleno 
+                                de hilos entrelazados, que atrapan los buenos sueños,y hacen que el sueño sea 
+                                tranquilo y agradable, pero al mismo tiempo retrasa los malos sueños. 
+                                Contamos con varios patrones y diseños, también vienen en diferentes colores.</p>
                         </div>
                     </div>
                 </div>
@@ -316,8 +328,8 @@
                         <h5 class="card-title pt-2 text-center">MANILLAS TEJIDAS</h5>
                         <img src="https://i.ibb.co/bj0W1zH/D-NQ-NP-773589-MCO43694611317-102020-O.png" class="card-img-top" alt="Pulseras tejidas">
                         <div class="card-body">
-                            <p class="card-text description">Some quick example text to build on the card
-                                title and make up the bulk of the card's content.</p>
+                            <p class="card-text description">Son productos 100% hechos a mano, tejidas en hilo macramé, 
+                                con cierre ajustable. Disponibilidad en todos los colores, modelos y diseños.</p>
                             <h5 class="text-precio">COP <span class="precio">15000</span></h5>
                             <div class="d-grid gap-2 cont">
                                 <button style="display:inline" id="Btn2.1" class="btn button2"><a href="Login.html"> <i class="fas fa-exclamation-triangle"></i> Inicia sesión para comprar <i class="fas fa-exclamation-triangle"></i></a></button>
@@ -332,8 +344,9 @@
                         <h5 class="card-title pt-2 text-center">MANILLA DE CUERO</h5>
                         <img src="https://i.ibb.co/GcZ7WYp/images-jumpseller-com-PS3511-Pulsera-Manilla-Cuero-Constelaciones-Zodiaco-Aries.png" class="card-img-top" alt="manillas de cuero">
                         <div class="card-body">
-                            <p class="card-text description">Some quick example text to build on the card
-                                title and make up the bulk of the card's content.</p>
+                            <p class="card-text description">Pulseras elaboradas en cuero trenzado sintético 
+                                y dijes de Zamak (según modelo), son ajustables. Cuentan con material de alta calidad. Empacadas 
+                                en cajita “CTA”</p>
                             <h5 class="text-precio">COP <span class="precio">20000</span></h5>
                             <div class="d-grid gap-2 cont">
                                 <button style="display:inline" id="Btn3.1" class="btn button2"><a href="Login.html"><i class="fas fa-exclamation-triangle"></i> Inicia sesión para comprar <i class="fas fa-exclamation-triangle"></i></a></button>
@@ -441,10 +454,9 @@
                 </div>
             </div>
         </div>
-
                                                                         <!--PAGINA MANILLAS PAREJAS-->
         <div class="tab-pane fade  container" id="pills-profile3" role="tabpanel" aria-labelledby="pills-profile-tab3">
-            <h1 class="h4 m-4 text-center"><b><i class="fas fa-heart"></i> MANILLAS PAREJAS <i class="fas fa-heart"></i></b></h1>
+            <h1 class="h4 m-4 text-center"><b><i class="fas fa-heart"></i> MANILLAS PAREJAS3 <i class="fas fa-heart"></i></b></h1>
         
             <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
         
@@ -1633,7 +1645,7 @@
         </div>
                                                     <!--PAGINA CARRITO-->
         <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-            <table class="table">
+            <table class="table" id="tableI">
                 <thead>
                     <tr class="text-table">
                         <th class="col1" scope="col">IMG <i class="fas fa-image"></i></th>
@@ -1660,16 +1672,16 @@
                 </div>
             </div>
                 <div class="nav nav-pills row mx-4" id="pills-tab" role="tablist">
-                    <button id="BTN_COMPRAR" id="pills-contact-tab2" data-bs-toggle="pill" data-bs-target="#pills-contact2"
+                    <button id="BTN_COMPRAR" style="display:none" id="pills-contact-tab2" data-bs-toggle="pill" data-bs-target="#pills-contact2"
                      onclick="myfunction()" class="btn btn-success"> <i class="fas fa-cash-register"></i> COMPRAR <i
                      class="fas fa-cash-register"></i>
                     </button>
+                   
                 </div>
-           
+               
             <br>
         </div>
     </div>
-
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
@@ -1681,7 +1693,7 @@
     <script>
         var variable2 = document.getElementById("PRUEBAS")
     </script>
-    <script src="tienda.js"></script>
+    
 
     <!-- FIREBASE SCRITPS-->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -1711,6 +1723,7 @@
         const fs = firebase.firestore()
     </script>
     <script src="Acesso.js"></script>
+    <script src="tienda.js"></script>
     <!--Funcionamiento de la tarjeta de credito-->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="Tarjeta.js"></script>
