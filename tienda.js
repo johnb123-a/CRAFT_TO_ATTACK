@@ -225,6 +225,9 @@ function addLocalStorage(){
   }
 }*/
 function myfunction() {
+  var T = document.getElementById('COMPRAS').textContent;
+  var B = document.getElementById('PRUEBAS');
+  B.textContent = T;
   swal({
   title: "¿ESTAS SEGURO DE REALIZAR LA COMPRA?",
   text: "Elige una opción....",
@@ -235,11 +238,8 @@ function myfunction() {
   })
   .then((willDelete) => {
   if (willDelete) {
-    swal("GRACIAS POR TU COMPRA HERMOSO ", {
-      icon: "success",})
-      .then((value) => {
-        bs();
-      });
+    
+
   } else {
    location.reload();
   }
@@ -276,5 +276,55 @@ function bs(){
         console.log("My contents is \n" + cells[i].textContent + "\n");
       }*/
 
+}
+const vab = document.getElementById('prueba');
+
+vab.addEventListener('submit',async (e)=>{
+  e.preventDefault();
+  
+  const NameUser = document.getElementById('user-name').textContent;
+  const EmailUser = document.getElementById('user-email').textContent;
+  
+  const response = await fs.collection('prueba').doc().set({
+     NameUser,
+     EmailUser
+  })
+  console.log(response)
+  console.log(NameUser);
+  console.log(EmailUser);
+})
+
+function dirrecion(){
+  swal("Escribe tu direccion:", {
+    content: "input",
+    })
+    .then((value) => {
+     swal(`Se enviara a: ${value}`,{
+        buttons: {
+          catch: {
+            text: "Cambiar Direccion",
+            value: "catch",
+          },
+          Validar: true,
+        },
+      }).then((value) => {
+        
+        do{
+          switch (value) {
+            case "Validar":
+              swal(`Gracias por tu comprar`)
+            break;
+ 
+            case "catch":
+              swal("Escribe tu direccion:", {
+                content: "input",
+              }).then((value) => {
+                swal(`Gracias por tu comprar`)
+              });
+            break;
+            }
+        }while (value=="");
+      });
+   });
 }
 

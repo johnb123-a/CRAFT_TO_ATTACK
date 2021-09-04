@@ -11,15 +11,23 @@
   background-attachment: fixed 
 }
 .super-header {
-  background: rgba(100, 100, 100, 0.875);
-  padding: 1rem 1rem 2.5rem 1rem;
+  background: rgba(0, 0, 0, 0.875);
+  padding: -0.5rem;
 }
 #user-name{
   color: rgb(255, 255, 255);
-  padding-left: 1.5rem;
+  text-align: right;
+  padding-right: 1rem;
   font-family: 'Courier New', Courier, monospace;
-  padding-left: 7rem;
-  margin-top: -3rem;
+  padding-left: 1rem;
+  margin-top: 0rem;
+  margin-left: -0.1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color:rgb(255, 255, 255);
+  padding:1rem 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
 #user-name:hover{
   color: rgba(27, 175, 145, 0.895);
@@ -36,8 +44,8 @@ header, .alert{
 }
 .wolf{
   color: #fff;
-  font-size: 2.8rem;
-  padding:0.45rem 0.5rem 0rem 0.5rem;
+  font-size: 2.5rem;
+  padding:0.5rem 0.5rem 0.5rem 0.5rem;
 }
 .wolf:hover{
   color: rgb(255, 0, 0);
@@ -48,27 +56,32 @@ header, .alert{
  border-radius: 1rem;
 
 }
+#pic-tam{
+  padding:3rem 0.5rem 0rem 4rem;
+}
 .demo-avatar{
-  top: 0rem;
-  position: relative;
+  top: 1rem;
+  position: right ;
   display: inline-block;
-  width: 5rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 1rem;
+  background-size: 3rem;
 }
 
 /*LISTA DESPLEGABLE*/
 .dropdown{
-  margin:0rem 0rem 0rem 0rem;
+  margin:0.5rem 0.5rem 0.5rem 0.5rem;
+  padding:0.3rem 0.3rem 0.3rem 0.3rem;
   color:#ffffff;
+  margin-top: 0rem;
+  margin-left: -0.1rem;
   font-family: 'Courier New', Courier, monospace;
   background:rgba(27, 175, 145, 0.895);
   border-radius: 0.5rem;
 }
 #body .dropdown .master{
-  padding-top: 0.8rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  
   color:#ffffff;
   font-family: 'Courier New', Courier, monospace;
   background-color:rgba(27, 175, 145, 0.895);
@@ -96,16 +109,18 @@ header, .alert{
   color:rgb(0, 0, 0);
 }
 #body #BTN_CARRO a{
-  background:none;
+  background: none;
 }
+
 #body #BTN_CARRO a .car{
-  margin-left: -0.5rem;
-  font-size:1.4rem;
-  padding: 0.4rem 0.5rem 0.5rem 0.5rem;
-  background-color:rgba(28, 170, 142, 0.895);
-  width:2.5rem;
+  margin:0.1rem 0rem -0.2rem -0.2rem;
+  padding:0.6rem 0.4rem 0.6rem 0.4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  background:rgba(27, 175, 145, 0.895);
+  font-size: 1.3rem;
+  color:rgb(255, 255, 255);
   border-radius: 0.5rem;
-  color: rgb(255, 255, 255);
 }
 #body #BTN_CARRO a .car:hover{
   transition: all 0.4s linear;
@@ -134,13 +149,12 @@ header, .alert{
 
 
 #Login{
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+  margin:0rem -0rem -0.5rem 0.5rem;
+  padding:0.7rem 0.5rem 0rem 0.5rem;
   margin-bottom: 0.5rem;
   background:rgba(27, 175, 145, 0.895);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color:rgb(255, 255, 255);
-  padding:0.1rem 0.6rem 0rem 0.5rem;
   border-radius: 0.5rem;
 }
 #Login:hover{
@@ -151,15 +165,14 @@ header, .alert{
   color:rgb(255, 255, 255);
 }
 #Logout{
-  margin-top: 0.5rem;
-  margin-left: -0.5rem;
+  margin-top: -0rem;
+  margin:0.5rem 0.5rem 0.5rem 0.5rem;
+  padding:0.4rem 0.5rem 0.4rem 0.5rem;
   margin-bottom: 0.5rem;
   background:rgba(27, 175, 145, 0.895);
   font-size: 1.3rem;
   color:rgb(255, 255, 255);
-  padding:0.1rem 0.3rem 0rem 0.5rem;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
 }
 #Logout:hover{
   transition: all 0.4s linear;
@@ -384,4 +397,17 @@ header, .alert{
   color:#0f0f0f;
   transition: all 0.4s linear;
   border-radius: 0.6rem;
+}
+#PRUEBAS{
+  color: #0f0f0f;
+
+}
+#PRUEBAS:hover{
+  color:rgba(27, 175, 145, 0.895);
+  transition: all 0.4s linear;
+  cursor: default;
+}
+
+#BOTON_FINAL{
+  text-align:center;
 }

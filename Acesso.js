@@ -8,9 +8,11 @@ auth.onAuthStateChanged((user) => {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
     console.log('usuario logeado');
-    document.getElementById('Super-Header').style.display='block';
     document.getElementById('Logout').style.display='inline';
     document.getElementById('Login').style.display='none';
+    document.getElementById('user-pic').style.display='inline-block';
+
+    document.getElementById('user-name').style.display='inline-block';
     document.getElementById('BTN_CARRO').style.display='inline';
     document.getElementById('Btn1.1').style.display='none';
     document.getElementById('Btn1').style.display='inline';
@@ -181,11 +183,12 @@ auth.onAuthStateChanged((user) => {
         var displayName = user.displayName;
         const displayemail = user.email;
         const photoURL = user.photoURL;
+        
         userName.textContent = displayName;
         userEmail.textContent =displayemail;
         if (photoURL){
-          userPic.style.backgroundImage= 'url('+ photoURL + ')'; 
-
+          userPic.style.backgroundImage= 'url('+ photoURL + ')';
+           
         }else{
           userPic.backgroundImage= 'url( /images/profile_placeholder.png)';
         }
