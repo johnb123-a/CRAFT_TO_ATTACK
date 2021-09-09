@@ -328,3 +328,29 @@ function dirrecion(){
    });
 }
 
+function Base(){
+  auth.onAuthStateChanged((user) => {
+    if (user) {
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+        console.log('usuario logeado');
+        const User = firebase.auth().currentUser;
+        if (User !== null) {
+           // The user object has basic properties such as display name, email, etc.
+          const displayemail = User.email;
+          //console.log(displayemail);
+          if(displayemail == "barretodiazjohnalexander@gmail.com" || displayemail == "lizeth.leyva15@gmail.com" || displayemail == "xomita.arias@gmail.com"){
+            setTimeout(function(){window.location.href="Inventario2.html";},1000)
+          }else{
+            setTimeout(function(){window.location.href="Inventario.html";},1000) 
+          }
+        
+        }else {
+          console.log('usuario no logeado');
+        }
+    } else {
+     console.log('usuario no logeado');
+      //
+    }
+  });
+}

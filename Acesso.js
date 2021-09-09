@@ -180,7 +180,7 @@ auth.onAuthStateChanged((user) => {
     const user = firebase.auth().currentUser;
     if (user !== null) {
         // The user object has basic properties such as display name, email, etc.
-        var displayName = user.displayName;
+        const displayName = user.displayName;
         const displayemail = user.email;
         const photoURL = user.photoURL;
         
