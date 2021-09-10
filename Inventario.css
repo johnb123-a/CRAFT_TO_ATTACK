@@ -1,0 +1,24 @@
+:root{
+--font-family: 'Courier New', Courier, monospace;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0rem;
+    margin:0rem;
+}
+#btn_Edit{
+    font-family: var(--font-family);
+    background-color: rgb(251, 146, 8); 
+}
+#btn_Delete{
+    font-family: var(--font-family);
+    background-color: rgb(255, 0, 0);
+    
+}
+#Tabla_Header{
+    font-family: var(--font-family);
+}
+#Tabla{
+   font-family: var(--font-family);
+}
