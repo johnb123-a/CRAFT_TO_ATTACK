@@ -97,12 +97,35 @@ function editar (id,Producto, Precio, Cantidad){
     })
     .then(() => {
      console.log("Document successfully updated!");
-     boton.innerHTML = 'Guardar';
      document.getElementById('id').style="display:block"
      document.getElementById('ID').value ='';
      document.getElementById('PRODUCTO').value ='';
      document.getElementById('PRECIO').value ='';
      document.getElementById('CANTIDAD').value ='';
+     boton.innerHTML = 'Guardar';
+     boton.onclick = function(){
+       const Id =document.getElementById('ID').value;
+    const Producto = document.getElementById('PRODUCTO').value;
+    const Precios = document.getElementById('PRECIO').value;
+    const Cantidad = document.getElementById('CANTIDAD').value;
+    
+    db.collection("PRODUCTS").doc().set({
+    Id: Id,
+    Nombre_del_producto: Producto,
+    Precio: Precios,
+    Productos_Disponibles: Cantidad
+    }).then((docRef) => {
+    console.log("Document written with ID: ", docRef.id);
+     document.getElementById('ID').value ='';
+     document.getElementById('PRODUCTO').value ='';
+     document.getElementById('PRECIO').value ='';
+     document.getElementById('CANTIDAD').value ='';
+    }).catch((error) => {
+    console.error("Error adding document: ", error);
+    });
+    taskForm.reset();
+     }
+    
     })
     .catch((error) => {
     // The document probably doesn't exist.

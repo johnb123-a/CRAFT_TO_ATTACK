@@ -70,6 +70,7 @@ var cambio_pw = function(){
   });
 }
 
+
 //GOOGLE LOGIN
 const googleButton = document.querySelector('#Googlelogin')
 googleButton.addEventListener('click',e => {
@@ -90,6 +91,7 @@ googleButton.addEventListener('click',e => {
     })
 
 });
+
 //FACEBOOK LOGIN
 const facebookButton = document.querySelector('#Facebooklogin')
 facebookButton.addEventListener('click',e =>{

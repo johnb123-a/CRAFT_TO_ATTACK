@@ -32,17 +32,19 @@
                         <a href="TIENDA.html">VOLVER</a>
                         <h1 class="h4">INVENTARIO</h1>
 
-                        <form id="task-form">
+                        <div class="container">
                             <!-- Id input -->
                             <div class="form-outline mb-4">
                                 <input id="ID" type="text" id="form7Example1" class="form-control" />
                                 <label class="form-label" for="form7Example1">Id</label>
                             </div>
-                            <button class="btn btn-primary" onclick="Buscador()">
+                            <button style="display:block" id="boton" class="btn btn-primary" onclick="Buscador()">
                                 Buscar
                             </button>
-
-                        </form>
+                            <button style="display: none;" id="boton2" class="btn btn-primary" onclick="Regresar()">
+                                Regresar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
