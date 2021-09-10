@@ -18,43 +18,53 @@
 
     
     <link rel="stylesheet" href="Inventario.css">
+    <link rel="stylesheet" href="Dark_Mode7.css">
 
 
 </head>
-<body class="bg-light">
+<body id="Body">
 
     <!-- ADD TASK -->
     <div class="container p-4">
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-body">
-                        <a href="TIENDA.html">VOLVER</a>
-                        <h1 class="h4">INVENTARIO</h1>
-
-                        <div class="container">
+                    <div id="card_header" class="card-header">
+                        <a id="Devolver" class="btn btn-floating" href="index.html" role="button">
+                            <i class="fas fa-arrow-circle-left fa-lg"></i>
+                        </a>
+                        <b id="Titulo" class="text-white" style="font-family:'Courier New', Courier, monospace; font-size:1.3rem">
+                            INVENTARIO DE CRAFT TO ⚔️</b>
+                        <button id="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')"
+                            class="btn px-3"><label for="dark-mode" class="dark-mode-button">
+                                <i id="MOD_DARK" class="fas fa-sun fa-lg"></i>
+                        </button>
+                    </div>
+                    <div id="card_body" class="card-body">
+                        
                             <!-- Id input -->
-                            <div class="form-outline mb-4">
-                                <input id="ID" type="text" id="form7Example1" class="form-control" />
-                                <label class="form-label" for="form7Example1">Id</label>
+                            <div class="input-group mb-4">
+                                <input id="ID" type="text" style="text-transform:lowercase;" class="form-control" placeholder="Id o Nombre del producto" 
+                                    aria-describedby="basic-addon1" />
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
                             </div>
-                            <button style="display:block" id="boton" class="btn btn-primary" onclick="Buscador()">
+                            <button style="display:block" id="boton" class="btn" onclick="Buscador()">
                                 Buscar
                             </button>
-                            <button style="display: none;" id="boton2" class="btn btn-primary" onclick="Regresar()">
+                            <button style="display: none;" id="boton2" class="btn" onclick="Regresar()">
                                 Regresar
                             </button>
-                        </div>
+        
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="table-responsive">
-        <table class="table table-hover table-bordered border-success">
+        <table id="table" class="table table-bordered">
             <thead id="Tabla_Header">
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col"><i class="fas fa-tags fa-lg"></i></th>
                     <th scope="col">PRODUCTO</th>
                     <th scope="col">PRECIO (COP)</th>
                     <th scope="col">CANTIDAD</th>

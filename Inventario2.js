@@ -16,9 +16,11 @@ var tabla = document.getElementById('Tabla');
 });
 
 function Buscador(){
-    const Id = document.getElementById('ID').value;
-    if(Id !=''){
-    db.collection("PRODUCTS").where("Id", "==", Id).onSnapshot((querySnapshot) => {
+    const value = document.getElementById('ID').value;
+    if(value !=''){
+    let validacion = false;
+    db.collection("PRODUCTS").where("Id", "==", value).onSnapshot((querySnapshot) => {
+        
         querySnapshot.forEach((doc) => {
             // doc.data() is never undefined for query doc snapshots
             tabla.innerHTML = `
@@ -33,10 +35,41 @@ function Buscador(){
             //console.log(doc.id, " => ", doc.data().Nombre_del_producto);
             //console.log(doc.id, " => ", doc.data().Precio);
             //console.log(doc.id, " => ", doc.data().Productos_Disponibles);
+            validacion = true;
         })
-    });
-       document.getElementById('boton').style="display:none";
-       document.getElementById('boton2').style="display:block";
+        if(validacion == false){
+            swal("Lo sentimos","Pero este dato parece que no existe en nuestra base de datos","error");
+        } else {
+            document.getElementById('boton').style="display:none";
+            document.getElementById('boton2').style="display:block";
+        }
+    })
+    db.collection("PRODUCTS").where("Nombre_del_producto", "==", value).onSnapshot((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            // doc.data() is never undefined for query doc snapshots
+            tabla.innerHTML = `
+            <tr>
+            <th scope="row">${doc.data().Id}</th>
+            <td>${doc.data().Nombre_del_producto}</td>
+            <td>${doc.data().Precio}</td>
+            <td>${doc.data().Productos_Disponibles}</td>       
+            </tr>
+            `
+            //console.log(doc.id, " => ", doc.data().Id);
+            //console.log(doc.id, " => ", doc.data().Nombre_del_producto);
+            //console.log(doc.id, " => ", doc.data().Precio);
+            //console.log(doc.id, " => ", doc.data().Productos_Disponibles);
+            validacion = true;
+        })
+        if(validacion == false){
+            swal("Lo sentimos","Pero este dato parece que no existe en nuestra base de datos","error");
+        } else {
+            document.getElementById('boton').style="display:none";
+            document.getElementById('boton2').style="display:block";
+        }
+    })
+    } else{
+        swal("","Debes poner el dato que deseas buscar","warning");
     }
     
 }

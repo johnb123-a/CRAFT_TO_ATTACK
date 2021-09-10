@@ -340,7 +340,7 @@ function Base(){
           const displayemail = User.email;
           //console.log(displayemail);
           if(displayemail == "barretodiazjohnalexander@gmail.com" || displayemail == "lizeth.leyva15@gmail.com" || displayemail == "xomita.arias@gmail.com"){
-            setTimeout(function(){window.location.href="Inventario_Admi.html";},1000)
+            setTimeout(function(){window.location.href="Inventarios.html";},1000)
           }else{
             setTimeout(function(){window.location.href="Inventario.html";},1000) 
           }

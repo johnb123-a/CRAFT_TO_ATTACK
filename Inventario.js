@@ -40,8 +40,7 @@ db.collection("PRODUCTS").onSnapshot((querySnapshot) => {
             <td>${doc.data().Nombre_del_producto}</td>
             <td>${doc.data().Precio}</td>
             <td>${doc.data().Productos_Disponibles}</td>
-            <td> <button id="btn_Edit" onclick="editar('${doc.id}','${doc.data().Nombre_del_producto}','${doc.data().Precio}','${doc.data().Productos_Disponibles}')" class="btn"><b>EDITAR</b></button> </td>
-            <td> <button id="btn_Delete" onclick="eliminar('${doc.id}')" class="btn btn-sm px-4 pt-3 pb-2"> <i class="fas fa-times"></i> </button></td>     
+            <td> <button id="btn_Edit" onclick="editar('${doc.id}','${doc.data().Nombre_del_producto}','${doc.data().Precio}','${doc.data().Productos_Disponibles}')" class="btn"><b>EDITAR</b></button>  <button id="btn_Delete" onclick="eliminar('${doc.id}')" class="btn btn-sm"> <i class="fas fa-trash-alt"></i> </button> </td>   
         </tr>
         `
     });
@@ -105,9 +104,9 @@ function editar (id,Producto, Precio, Cantidad){
      boton.innerHTML = 'Guardar';
      boton.onclick = function(){
        const Id =document.getElementById('ID').value;
-    const Producto = document.getElementById('PRODUCTO').value;
-    const Precios = document.getElementById('PRECIO').value;
-    const Cantidad = document.getElementById('CANTIDAD').value;
+       const Producto = document.getElementById('PRODUCTO').value;
+       const Precios = document.getElementById('PRECIO').value;
+       const Cantidad = document.getElementById('CANTIDAD').value;
     
     db.collection("PRODUCTS").doc().set({
     Id: Id,
@@ -134,3 +133,46 @@ function editar (id,Producto, Precio, Cantidad){
 
   }
 }
+
+function permite(elEvento, permitidos) {
+  // Variables que definen los caracteres permitidos
+  var numeros = "0123456789";
+  var caracteres = " abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+  var numeros_caracteres = numeros + caracteres;
+  var teclas_especiales = [8, 37, 39, 46];
+  // 8 = BackSpace, 46 = Supr, 37 = flecha izquierda, 39 = flecha derecha
+
+
+  // Seleccionar los caracteres a partir del parámetro de la función
+  switch(permitidos) {
+    case 'num':
+      permitidos = numeros;
+      break;
+    case 'car':
+      permitidos = caracteres;
+      break;
+    case 'num_car':
+      permitidos = numeros_caracteres;
+      break;
+  }
+
+  // Obtener la tecla pulsada
+  var evento = elEvento || window.event;
+  var codigoCaracter = evento.charCode || evento.keyCode;
+  var caracter = String.fromCharCode(codigoCaracter);
+
+  // Comprobar si la tecla pulsada es alguna de las teclas especiales
+  // (teclas de borrado y flechas horizontales)
+  var tecla_especial = false;
+  for(var i in teclas_especiales) {
+    if(codigoCaracter == teclas_especiales[i]) {
+      tecla_especial = true;
+      break;
+    }
+  }
+
+  // Comprobar si la tecla pulsada se encuentra en los caracteres permitidos
+  // o si es una tecla especial
+  return permitidos.indexOf(caracter) != -1 || tecla_especial;
+}
+
