@@ -6,7 +6,7 @@ html.dark-mode #card_header{
     background-color: rgba(27, 175, 145, 0.895);
 }
 html.dark-mode #card_body{
-    background-color:#393c41;
+    background-color:#919294;
 }
  html.dark-mode #ID{
    background-color: #dfdfdf;
@@ -89,4 +89,8 @@ html.dark-mode #boton:hover{
 }
 html.dark-mode #boton2{
     background-color: rgb(251, 146, 8); 
+}
+html.dark-mode #Icono{
+    background: rgba(27, 175, 145, 0.895);
+    color:white;
 }
