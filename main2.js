@@ -97,19 +97,36 @@ const facebookButton = document.querySelector('#Facebooklogin')
 facebookButton.addEventListener('click',e =>{
  const provider = new firebase.auth.FacebookAuthProvider();
  //Esto abrira una ventana 
- auth.signInWithPopup(provider)
-     .then(result =>{
-       swal("Ingreso Exitoso!","BIENVENIDO", "success");
-       setTimeout(function(){window.location.href="TIENDA.html";},5000)
-       console.log('Sesion iniciada con Facebook');
-       logingForm.reset();
-     })
-     .catch(err => {
-       swal("Ohh no!", "Algo ha sucecido por favor intentalo mas tarde!", "error");
-       console.log(err);
-     })
+ firebase
+  .auth()
+  .signInWithPopup(provider)
+  .then((result) => {
+    /** @type {firebase.auth.OAuthCredential} */
+    var credential = result.credential;
 
-})
+    // The signed-in user info.
+    var user = result.user;
+
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    var accessToken = credential.accessToken;
+
+    console.log(credential);
+    console.log(user);
+    console.log(accessToken);
+
+    // ...
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // The email of the user's account used.
+    var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    // ...
+  });
+});
 //TWITTER LOGIN
 const twitterButton = document.querySelector('#Twitterlogin')
 twitterButton.addEventListener('click',e =>{
