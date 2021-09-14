@@ -95,9 +95,8 @@ googleButton.addEventListener('click',e => {
 //FACEBOOK LOGIN
 const facebookButton = document.querySelector('#Facebooklogin')
 facebookButton.addEventListener('click',e =>{
- const provider = new firebase.auth.FacebookAuthProvider();
- //Esto abrira una ventana 
- firebase
+  var provider = new firebase.auth.FacebookAuthProvider();
+  firebase
   .auth()
   .signInWithPopup(provider)
   .then((result) => {
@@ -110,10 +109,6 @@ facebookButton.addEventListener('click',e =>{
     // This gives you a Facebook Access Token. You can use it to access the Facebook API.
     var accessToken = credential.accessToken;
 
-    console.log(credential);
-    console.log(user);
-    console.log(accessToken);
-
     // ...
   })
   .catch((error) => {
@@ -124,6 +119,7 @@ facebookButton.addEventListener('click',e =>{
     var email = error.email;
     // The firebase.auth.AuthCredential type that was used.
     var credential = error.credential;
+
     // ...
   });
 });
