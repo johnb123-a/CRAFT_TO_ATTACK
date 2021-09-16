@@ -8,6 +8,9 @@ html.dark-mode #card_header{
 html.dark-mode #card_body{
     background-color:#919294;
 }
+html.dark-mode #card_footer{
+    background-color:#919294;
+}
  html.dark-mode #ID{
    background-color: #dfdfdf;
 }
@@ -88,6 +91,15 @@ html.dark-mode #boton:hover{
     color: aliceblue;
 }
 html.dark-mode #boton2{
+    background-color: rgb(3, 187, 43); 
+    color: aliceblue;
+}
+html.dark-mode #boton2:hover{
+    background-color: rgb(49, 97, 230); 
+    transition: all 0.4s linear;
+    color: aliceblue;
+}
+html.dark-mode #boton3{
     background-color: rgb(251, 146, 8); 
 }
 html.dark-mode #Icono{

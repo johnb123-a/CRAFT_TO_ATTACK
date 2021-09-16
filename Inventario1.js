@@ -1,22 +1,5 @@
-var tabla = document.getElementById('Tabla');
-  //LEER DOCUMENTOS
-       db.collection("PRODUCTS").onSnapshot((querySnapshot) => {
-       tabla.innerHTML='';
-       querySnapshot.forEach((doc) => {
-        //console.log(`${doc.id} => ${doc.data()}`);
-        tabla.innerHTML += `
-        <tr>
-            <th scope="row">${doc.data().Id}</th>
-            <td>${doc.data().Nombre_del_producto}</td>
-            <td>${doc.data().Precio}</td>
-            <td>${doc.data().Productos_Disponibles}</td>       
-        </tr>
-        `
-    });
-});
-
 function Buscador(){
-    const value = document.getElementById('ID').value;
+    const value = document.getElementById('Valor').value;
     if(value !=''){
     let validacion = false;
     db.collection("PRODUCTS").where("Id", "==", value).onSnapshot((querySnapshot) => {
@@ -40,8 +23,8 @@ function Buscador(){
         if(validacion == false){
             swal("Lo sentimos","Pero este dato parece que no existe en nuestra base de datos","error");
         } else {
-            document.getElementById('boton').style="display:none";
-            document.getElementById('boton2').style="display:block";
+            document.getElementById('boton2').style="display:none";
+            document.getElementById('boton3').style="display:block";
         }
     })
     db.collection("PRODUCTS").where("Nombre_del_producto", "==", value).onSnapshot((querySnapshot) => {
@@ -64,8 +47,10 @@ function Buscador(){
         if(validacion == false){
             swal("Lo sentimos","Pero este dato parece que no existe en nuestra base de datos","error");
         } else {
-            document.getElementById('boton').style="display:none";
-            document.getElementById('boton2').style="display:block";
+            document.getElementById('boton2').style="display:none";
+            document.getElementById('boton3').style="display:block";
+            document.getElementById('card_body').style="display:none";
+
         }
     })
     } else{
@@ -89,8 +74,9 @@ function Regresar(){
         `
         });
     });
-    document.getElementById('boton2').style="display:none";
-    document.getElementById('boton').style="display:block";
+    document.getElementById('boton3').style="display:none";
+    document.getElementById('boton2').style="display:block";
+    document.getElementById('card_body').style="display:block";
 }
 
 function permite(elEvento, permitidos) {

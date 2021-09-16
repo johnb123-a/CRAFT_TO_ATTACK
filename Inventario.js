@@ -165,7 +165,10 @@ function editar (id,Producto, Precio, Cantidad){
 function permite(elEvento, permitidos) {
   // Variables que definen los caracteres permitidos
   var numeros = "0123456789";
-  var caracteres = " abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+  var caracteres = " ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz";
+  var caracteresMAY = " ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
+  var caracteresMIN = " abcdefghijklmnñopqrstuvwxyz";
+  var caracteresMIN_num = " 0123456789abcdefghijklmnñopqrstuvwxyz";
   var numeros_caracteres = numeros + caracteres;
   var teclas_especiales = [8, 37, 39, 46];
   // 8 = BackSpace, 46 = Supr, 37 = flecha izquierda, 39 = flecha derecha
@@ -176,8 +179,14 @@ function permite(elEvento, permitidos) {
     case 'num':
       permitidos = numeros;
       break;
-    case 'car':
-      permitidos = caracteres;
+    case 'car-min':
+      permitidos = caracteresMIN;
+      break;
+    case 'car-min-num':
+      permitidos = caracteresMIN_num;
+      break;
+    case 'car-may':
+      permitidos = caracteresMAY;
       break;
     case 'num_car':
       permitidos = numeros_caracteres;

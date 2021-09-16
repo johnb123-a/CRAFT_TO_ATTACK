@@ -41,7 +41,7 @@
                                 <i id="MOD_DARK" class="fas fa-sun fa-lg"></i>
                         </button>
                     </div>
-                    <div id="card_body" class="card-body">
+                    <div id="card_body" style="display:block;" class="card-body">
                         
                         <div class="container">
                             <!-- Id input -->
@@ -51,7 +51,7 @@
                             </div>
                             <!-- Producto input -->
                             <div class="form-outline input-group mb-4">
-                                <input id="PRODUCTO"  style="text-transform:lowercase;" type="text" class="form-control" onkeypress="return permite(event, 'car')" />
+                                <input id="PRODUCTO"  type="text" class="form-control" onkeypress="return permite(event, 'car-min')" />
                                 <label id="ID_LABEL" class="form-label " for="form7Example1">Producto\Cant.</label>
                                 <span class="input-group-text" id="basic-addon1">
                                     <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
@@ -169,7 +169,21 @@
                                Guardar
                             </button>
                         </div>
-    
+                    </div>
+                    <div id="card_footer" class="card-footer">
+                        <!-- Id input -->
+                        <div class="input-group mt-3 mb-4">
+                            <input id="Valor" type="text" class="form-control" onkeypress="return permite(event, 'car-min-num')"
+                                placeholder="Id o Nombre del producto" aria-describedby="basic-addon1" />
+                            <span class="input-group-text" id="Icono"><i class="fas fa-search"></i></span>
+                        </div>
+                        <button style="display:block" id="boton2" class="btn" onclick="Buscador()">
+                            Buscar
+                        </button>
+                        <button style="display: none;" id="boton3" class="btn" onclick="Regresar()">
+                            Regresar
+                        </button>
+                    
                     </div>
                 </div>
             </div>
@@ -224,5 +238,6 @@
 
     </script>
     <script src="Inventario.js"></script>
+    <script src="Inventario1.js"></script>
 </body>
 </html>

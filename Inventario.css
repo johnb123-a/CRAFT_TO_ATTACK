@@ -13,7 +13,7 @@
 #card_header{
     background-color: #1684eb;
 }
-#card_body{
+#card_body,#card_footer{
     background-color: #ececec;
 }
 #ID{
@@ -96,6 +96,10 @@
     color: aliceblue;
 }
 #boton2{
+    background-color: rgb(49, 97, 230); 
+    color: aliceblue;
+}
+#boton3{
     background-color: rgb(251, 146, 8); 
 }
 @media screen  and (min-width:300px) and (max-width:870px) {
