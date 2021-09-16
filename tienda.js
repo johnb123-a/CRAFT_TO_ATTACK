@@ -225,9 +225,6 @@ function addLocalStorage(){
   }
 }*/
 function myfunction() {
-  var T = document.getElementById('COMPRAS').textContent;
-  var B = document.getElementById('PRUEBAS');
-  B.textContent = T;
   swal({
   title: "¿ESTAS SEGURO DE REALIZAR LA COMPRA?",
   text: "Elige una opción....",
@@ -238,61 +235,12 @@ function myfunction() {
   })
   .then((willDelete) => {
   if (willDelete) {
-    
-
+    /*...*/
   } else {
    location.reload();
   }
 });
 }
-
-function bs(){
-  var Name=document.getElementById('user-name').textContent;
-  var Email=document.getElementById('user-email').textContent;
-  console.log(Name ,Email);
-  
-   fs.collection("cities").doc("LA").set({
-    name:"h",
-    rmail:"j"
-  })
-  .then(() => {
-    console.log("Document successfully written!");
-  })
-  .catch((error) => {
-    console.error("Error writing document: ", error);
-  });
-  /*var miTabla = document.getElementsByTagName("table");
-  var mitbody = miTabla.getElementsByTagName("tbody");
-  var miFila = mitbody.getElementsByTagName("tr");
-  var miCelda = miFila.getElementsByTagName("td");
-  var miCelda2 = miFila.getElementsByTagName("td");*/
-      /*console.log(("Tabla= "+miTabla.textContent));
-      console.log(("Tboty= "+mitbody.textContent));
-      console.log(("Fila= "+miFila.textContent));
-      console.log(("Celda= "+miCelda.textContent));
-      console.log(("Celda= "+miCelda2.textContent));*/
-      /*var cells = Array.prototype.slice.call(document.getElementById("tableI").getElementsByTagName("td"));
-      for(var i in cells){
-        console.log("My contents is \n" + cells[i].textContent + "\n");
-      }*/
-
-}
-const vab = document.getElementById('prueba');
-
-vab.addEventListener('submit',async (e)=>{
-  e.preventDefault();
-  
-  const NameUser = document.getElementById('user-name').textContent;
-  const EmailUser = document.getElementById('user-email').textContent;
-  
-  const response = await fs.collection('prueba').doc().set({
-     NameUser,
-     EmailUser
-  })
-  console.log(response)
-  console.log(NameUser);
-  console.log(EmailUser);
-})
 
 function dirrecion(){
   swal("Escribe tu direccion:", {
@@ -308,11 +256,10 @@ function dirrecion(){
           Validar: true,
         },
       }).then((value) => {
-        
-        do{
           switch (value) {
             case "Validar":
               swal(`Gracias por tu comprar`)
+              setTimeout(function(){window.location.href="Tienda.html";},3000)
             break;
  
             case "catch":
@@ -320,10 +267,10 @@ function dirrecion(){
                 content: "input",
               }).then((value) => {
                 swal(`Gracias por tu comprar`)
+                setTimeout(function(){window.location.href="Tienda.html";},3000)
               });
             break;
             }
-        }while (value=="");
       });
    });
 }

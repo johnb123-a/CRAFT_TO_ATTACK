@@ -4,7 +4,7 @@ const taskForm = document.getElementById('task-form');
 function Verificar(){
   const Id =document.getElementById('ID').value;
   const Producto = document.getElementById('PRODUCTO').value;
-  db.collection("PRODUCTS").onSnapshot((querySnapshot) => {
+  db.collection("PRODUCTS").get().then((querySnapshot) => {
     let validar = false;
     let validar2 = false;
     querySnapshot.forEach((doc) => {
@@ -18,7 +18,8 @@ function Verificar(){
       }
       });
     if (validar ==true || validar2 == true) {
-      console.log("Este id o producto ya existe en la base de datos");
+      swal("","!Este id o producto ya existe en la base de datos!","warning");
+      /*console.log("Este id o producto ya existe en la base de datos");*/
     } else {
       guardar();
     }  
@@ -44,36 +45,28 @@ function Verificar(){
     });*/
 
 function guardar(){
-
     const Id =document.getElementById('ID').value;
     const Producto = document.getElementById('PRODUCTO').value;
     const Precios = document.getElementById('PRECIO').value;
     const Cantidad = document.getElementById('CANTIDAD').value;
-
-    db.collection("PRODUCTS").doc().set({
-    Id: Id,
-    Nombre_del_producto: Producto,
-    Precio: Precios,
-    Productos_Disponibles: Cantidad
-    }).then((docRef) => {
-    console.log("Document written with ID: ", docRef.id);
-     document.getElementById('ID').value ='';
-     document.getElementById('PRODUCTO').value ='';
-     document.getElementById('PRECIO').value ='';
-     document.getElementById('CANTIDAD').value ='';
-    }).catch((error) => {
-    console.error("Error adding document: ", error);
-    });
-    taskForm.reset();
     
+    db.collection("PRODUCTS").doc().set({
+       Id: Id,
+       Nombre_del_producto: Producto,
+       Precio: Precios,
+       Productos_Disponibles: Cantidad
+      }).then((docRef) => {
+          console.log("Document written with ID: ", docRef.id);
+      }).catch((error) => {
+       console.error("Error adding document: ", error);
+      });
 }
 
 var tabla = document.getElementById('Tabla');
-//LEER DOCUMENTOS
 db.collection("PRODUCTS").onSnapshot((querySnapshot) => {
     tabla.innerHTML='';
     querySnapshot.forEach((doc) => {
-        //console.log(`${doc.id} => ${doc.data()}`);
+        
         tabla.innerHTML += `
         <tr>
             <th scope="row">${doc.data().Id}</th>
@@ -81,7 +74,8 @@ db.collection("PRODUCTS").onSnapshot((querySnapshot) => {
             <td>${doc.data().Nombre_del_producto}</td>
             <td>${doc.data().Precio}</td>
             <td>${doc.data().Productos_Disponibles}</td>
-            <td> <button id="btn_Edit" onclick="editar('${doc.id}','${doc.data().Nombre_del_producto}','${doc.data().Precio}','${doc.data().Productos_Disponibles}')" class="btn"><b>EDITAR</b></button>  <button id="btn_Delete" onclick="eliminar('${doc.id}')" class="btn btn-sm"> <i class="fas fa-trash-alt"></i> </button> </td>   
+            <td> <button id="btn_Edit" onclick="editar('${doc.id}','${doc.data().Nombre_del_producto}','${doc.data().Precio}','${doc.data().Productos_Disponibles}')" class="btn"><b>EDITAR</b></button>  
+            <button id="btn_Delete" onclick="eliminar('${doc.id}')" class="btn btn-sm"> <i class="fas fa-trash-alt"></i> </button> </td>   
         </tr>
         `
     });
@@ -89,27 +83,27 @@ db.collection("PRODUCTS").onSnapshot((querySnapshot) => {
 
 //BORRAR DOCUMENTOS
 function eliminar(id){
-    swal({
-       title: "Estas Seguro?",
-       text: "Una vez Eliminado, No podras recuperar este producto",
-       icon: "warning",
-       buttons: true,
-       dangerMode: true,
-    })
-    .then((willDelete) => {
-    if (willDelete) {
-        db.collection("PRODUCTS").doc(id).delete().then(() => {
-         swal("Producto borrado con exito", {
-         icon: "success",
-        }).catch((error) => {
-         console.error("Error removing document: ", error);
-        });
-        
-    });
-    } else {
-      swal("Cancelado","Producto asegurado","error")
-    }
-   });
+   swal("¿Estas Seguro?","Una vez Eliminado, No podras recuperar este producto","warning",{
+   buttons: {
+    Cancelar: true,
+    Confirmar: true,
+  },
+}).then((value) => {
+  switch (value) {
+    case "Confirmar":
+      db.collection("PRODUCTS").doc(id).delete().then(() => {
+          swal("Producto borrado con exito", {
+           icon: "success",
+          })
+        })
+      break;
+    case "Cancelar":
+      swal("","Haz cancelado la eliminacion de este producto","warning");
+      break;
+    default:
+      swal("","Debes escoger una de las opciones","info");
+  }
+});
 }
 
 //ACTUALIZAR DOCUMENTOS
@@ -128,61 +122,44 @@ function editar (id,Producto, Precio, Cantidad){
       var Precio = document.getElementById('PRECIO').value;
       var Cantidad = document.getElementById('CANTIDAD').value;
       
-      db.collection("PRODUCTS").onSnapshot((querySnapshot) => {
-        let validar = false;
-        querySnapshot.forEach((doc) => {
-        var identificador =  `${doc.data().Nombre_del_producto}`
-        if (Producto == identificador ){
-           validar= true;  
-         }
-      });
-       if (validar){
-          console.log("Este nombre de producto ya esta ocupado");
-       }else{
-         Subir();
-       }
-      });
-    
-    function Subir() {
        return washingtonRef.update({
         Nombre_del_producto: Producto,
         Precio: Precio,
         Productos_Disponibles: Cantidad
-      }).then(() => {
-       console.log("Document successfully updated!");
-       document.getElementById('id').style="display:block"
-       document.getElementById('ID').value ='';
-       document.getElementById('PRODUCTO').value ='';
-       document.getElementById('PRECIO').value ='';
-       document.getElementById('CANTIDAD').value ='';
-       boton.innerHTML = 'Guardar';
-        boton.onclick = function(){
-         const Id =document.getElementById('ID').value;
-         const Producto = document.getElementById('PRODUCTO').value;
-         const Precios = document.getElementById('PRECIO').value;
-         const Cantidad = document.getElementById('CANTIDAD').value;
-          db.collection("PRODUCTS").doc().set({
-           Id: Id,
-           Nombre_del_producto: Producto,
-           Precio: Precios,
-           Productos_Disponibles: Cantidad
-          }).then((docRef) => {
-           console.log("Document written with ID: ", docRef.id);
-           document.getElementById('ID').value ='';
-           document.getElementById('PRODUCTO').value ='';
-           document.getElementById('PRECIO').value ='';
-           document.getElementById('CANTIDAD').value ='';
-          }).catch((error) => {
-           console.error("Error adding document: ", error);
-          });
-          taskForm.reset();
-        }
-      }).catch((error) => {
-        // The document probably doesn't exist.
-       console.error("Error updating document: ", error);
-      });
-    }
-  }
+        }).then(() => {
+         console.log("Document successfully updated!");
+         document.getElementById('id').style="display:block"
+         document.getElementById('ID').value ='';
+         document.getElementById('PRODUCTO').value ='';
+         document.getElementById('PRECIO').value ='';
+         document.getElementById('CANTIDAD').value ='';
+         boton.innerHTML = 'Guardar';
+          boton.onclick = function(){
+           const Id =document.getElementById('ID').value;
+           const Producto = document.getElementById('PRODUCTO').value;
+           const Precios = document.getElementById('PRECIO').value;
+           const Cantidad = document.getElementById('CANTIDAD').value;
+            db.collection("PRODUCTS").doc().set({
+             Id: Id,
+             Nombre_del_producto: Producto,
+             Precio: Precios,
+             Productos_Disponibles: Cantidad
+            }).then((docRef) => {
+             console.log("Document written with ID: ", docRef.id);
+             document.getElementById('ID').value ='';
+             document.getElementById('PRODUCTO').value ='';
+             document.getElementById('PRECIO').value ='';
+             document.getElementById('CANTIDAD').value ='';
+            }).catch((error) => {
+             console.error("Error adding document: ", error);
+            });
+            taskForm.reset();
+          }
+        }).catch((error) => {
+          // The document probably doesn't exist.
+          console.error("Error updating document: ", error);
+        });
+      }
 }
 
 function permite(elEvento, permitidos) {
