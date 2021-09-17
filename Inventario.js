@@ -4,7 +4,7 @@ const taskForm = document.getElementById('task-form');
 function Verificar(){
   const Id =document.getElementById('ID').value;
   const Producto = document.getElementById('PRODUCTO').value;
-  db.collection("PRODUCTS").get().then((querySnapshot) => {
+  db.collection("PRODUCTS").onSnapshot((querySnapshot) => {
     let validar = false;
     let validar2 = false;
     querySnapshot.forEach((doc) => {
