@@ -259,7 +259,7 @@ function dirrecion(){
           switch (value) {
             case "Validar":
               swal(`Gracias por tu comprar`)
-              setTimeout(function(){window.location.href="Tienda.html";},3000)
+              setTimeout(function(){window.location.href="TIENDA.html";},3000)
             break;
  
             case "catch":
@@ -267,7 +267,7 @@ function dirrecion(){
                 content: "input",
               }).then((value) => {
                 swal(`Gracias por tu comprar`)
-                setTimeout(function(){window.location.href="Tienda.html";},3000)
+                setTimeout(function(){window.location.href="TIENDA.html";},3000)
               });
             break;
             }
