@@ -4,7 +4,7 @@ const taskForm = document.getElementById('task-form');
 function Verificar(){
   const Id =document.getElementById('ID').value;
   const Producto = document.getElementById('PRODUCTO').value;
-  db.collection("PRODUCTS").onSnapshot((querySnapshot) => {
+  db.collection("PRODUCTS").get().then((querySnapshot) => {
     let validar = false;
     let validar2 = false;
     querySnapshot.forEach((doc) => {
@@ -12,37 +12,19 @@ function Verificar(){
       var identificador2 =  `${doc.data().Nombre_del_producto}`
       if (Id == identificador ){
         validar= true;  
-      }
-      if (Producto == identificador2 ){
+      }else if (Producto == identificador2 ){
         validar2 = true;
       }
       });
     if (validar ==true || validar2 == true) {
-      swal("","!Este id o producto ya existe en la base de datos!","warning");
-      /*console.log("Este id o producto ya existe en la base de datos");*/
+      swal("OHH NO","No puedes poner este id o producto porque ya existe","error");
+      console.log("Este id o producto ya existe en la base de datos");
     } else {
       guardar();
     }  
   })
 }
-/*db.collection("PRODUCTS").onSnapshot((querySnapshot) => {
-       let validar = true;
-       querySnapshot.forEach((doc) => {
-           var identificador =  `${doc.data().Id}`
-           if (Id == identificador ){
-               validar= false;
-               
-            }
-       }); 
-       if(validar){
-        SaveProducts (Id,Producto, Precio, Cantidad);
-        taskForm.reset();
-       }else{
-        swal("OHH NO","No puedes poner este id porque ya existe","error");
-        validar= false;
-       }
-        
-    });*/
+
 
 function guardar(){
     const Id =document.getElementById('ID').value;
