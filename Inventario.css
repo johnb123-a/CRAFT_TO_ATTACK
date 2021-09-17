@@ -72,7 +72,8 @@
 #Tabla_Header th:hover{
     background-color: rgb(228, 228, 228);
     transition: all 0.4s linear;
-    cursor:default;
+    cursor: pointer;
+
 }
 #table{
     border: #0044ff;
