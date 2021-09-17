@@ -67,7 +67,7 @@ html.dark-mode #Tabla_Header{
 html.dark-mode #Tabla_Header th:hover{
     background-color: rgb(124, 124, 124);
     transition: all 0.4s linear;
-    cursor:default;
+    cursor:pointer;
 }
 html.dark-mode #table{
     border: rgba(27, 175, 145, 0.895);

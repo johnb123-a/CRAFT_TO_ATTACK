@@ -161,6 +161,62 @@ function editar (id,Producto, Precio, Cantidad){
       }
 }
 
+const botonproducto = document.getElementById('btnproducto');
+botonproducto.addEventListener('click', (e) => { 
+  elemento = document.getElementById("arriba"); 
+  elemento2 = document.getElementById("abajo"); 
+  if(elemento2.style.display=="inline") 
+    { 
+    elemento2.style.display="none"; 
+    elemento.style.display="inline"; 
+    }else{
+    elemento.style.display="none"; 
+    elemento2.style.display="inline"; 
+  }    
+});
+
+const btnprecio = document.getElementById('btnprecio');
+btnprecio.addEventListener('click', (e) => { 
+  elemento = document.getElementById("arriba3"); 
+  elemento2 = document.getElementById("abajo3"); 
+  if(elemento2.style.display=="inline") 
+    { 
+    elemento2.style.display="none"; 
+    elemento.style.display="inline"; 
+    }else{
+    elemento.style.display="none"; 
+    elemento2.style.display="inline"; 
+  }    
+});
+const btnid = document.getElementById('btnid');
+btnid.addEventListener('click', (e) => { 
+  elemento = document.getElementById("arriba2"); 
+  elemento2 = document.getElementById("abajo2"); 
+  if(elemento2.style.display=="inline") 
+    { 
+    elemento2.style.display="none"; 
+    elemento.style.display="inline"; 
+    }else{
+    elemento.style.display="none"; 
+    elemento2.style.display="inline"; 
+  }    
+});
+const btncant = document.getElementById('btncant');
+btncant.addEventListener('click', (e) => { 
+  elemento = document.getElementById("arriba4"); 
+  elemento2 = document.getElementById("abajo4"); 
+  if(elemento2.style.display=="inline") 
+    { 
+    elemento2.style.display="none"; 
+    elemento.style.display="inline"; 
+    }else{
+    elemento.style.display="none"; 
+    elemento2.style.display="inline"; 
+  }    
+});
+
+
+
 function permite(elEvento, permitidos) {
   // Variables que definen los caracteres permitidos
   var numeros = "0123456789";
