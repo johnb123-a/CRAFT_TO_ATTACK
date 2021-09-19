@@ -1,175 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-     <meta charset="UTF-8">
-     <link rel="shortcut icon" href="https://i.ibb.co/m66Mn6d/logoof.png">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>CRAFT TO ATTACK ⚔️</title>
-     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="nofollow">
-    
-    
-     <link rel="stylesheet" href="styles_index.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://i.ibb.co/m66Mn6d/logoof.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAFT TO ATTACK ⚔️</title>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="nofollow">
+
+
+    <link rel="stylesheet" href="styles_index.css" />
     <link rel="stylesheet" href="Dark_Mode.css" />
-     
 
-     <!--<link rel="stylesheet" href="Styles.css" /> -->
-     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 
-     <!-- Rediseña los Alerts-->
-     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    </head>
-    <body id="Body">
-        <header>
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-md fixed-top Header">
-                <!-- Container wrapper -->
-                <div class="container">
-                    <!-- Navbar brand -->
-                    <a class="navbar-brand Sub-Botones" role="button" aria-current="page">
-                        <img src="https://i.ibb.co/N1031M7/logoof.png"  onclick="Toasty( )" alt="" class="d-inline-block">
-                        <h4><b>BIENVENIDO</b></h4>
-                    </a>
-                    <button id="BOTON_MENU"class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-                        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
-                            <i class="fas fa-bars"></i>
-                        </span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarExample01">
-                        <ul id="Botones" class="navbar-nav me-auto mb-2 mb-lg-0" >
-                            <li class="nav-item">
-                                <a role="button" class="nav-link" aria-current="page" href="#TECNICAS"><b>Tecnicas</b></a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav flex-row">
+    <!--<link rel="stylesheet" href="Styles.css" /> -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 
-                            <li class="nav-item">
-                                <a id="btn_login"class="btn px-3" href="Login.html" role="button" aria-expanded="false">
-                                    <b>LOGIN</b>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="btn_sing-up" class="btn px-3" href="Sing_Up.html" role="button" aria-expanded="false">
-                                  <b>SIGN-UP</b>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="btn_Tienda" class="btn px-3" href="TIENDA.html" role="button" aria-expanded="false">
-                                    <b>STORE</b>
-                                </a>
-                            </li>
-                            <li class="nav-item dark-mode-button btn px-3" id="BTN_OSCURO" for="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')">
-                                <label id="dark-mode" >
-                                    <i class="fas fa-sun fa-lg"></i>
-                                </label>
-                            </li>
-                        </ul>   
-                    </div>
-                </div>
-                <!-- Container wrapper -->
-            </nav>
-            <!-- Navbar -->
-            <!-- Position it: -->
-            <div class="toast-container fixed-bottom p-3">
-                <!-- Then put toasts within -->
-                <div id="EpicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div id="Toast_Header" class="toast-header">
-                        <img src="https://i.ibb.co/9nvtgB6/tesoro.png" class="rounded me-2" alt="Tesoro" width="30rem" height="30rem">
-                        <strong class="me-auto">Felicidades has encontrado uno de los tesoros 🎉🎉</strong>
-                        <small class="text-white"><b></b></i></b></small>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div id="Toast_Body" class="toast-body">
-                        Canjea este cupon del 10<i class="fas fa-percentage"></i> en nuestra tienda: TrMdRS3108
-                    </div>
-                </div>
-            </div>
-            <div class="toast-container fixed-bottom p-3">
-                <!-- Then put toasts within -->
-                <div id="EpicToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div id="Toast_Header" class="toast-header">
-                        <img src="https://i.ibb.co/9nvtgB6/tesoro.png" class="rounded me-2" alt="Tesoro" width="30rem"
-                            height="30rem">
-                        <strong class="me-auto">Felicidades has encontrado uno de los tesoros 🎉🎉</strong>
-                        <small class="text-white"><b></b></small>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div id="Toast_Body" class="toast-body">
-                        Canjea este cupon del 12<i class="fas fa-percentage"></i> en nuestra tienda: YeRaNIeR831
-                    </div>
-                </div>
-            </div>
-            <div class="toast-container fixed-bottom p-3">
-                <!-- Then put toasts within -->
-                <div id="EpicToast3" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div id="Toast_Header" class="toast-header">
-                        <img src="https://i.ibb.co/9nvtgB6/tesoro.png" class="rounded me-2" alt="Tesoro" width="30rem"
-                            height="30rem">
-                        <strong class="me-auto">Felicidades has encontrado uno de los tesoros 🎉🎉</strong>
-                        <small class="text-white"><b></b></small>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div id="Toast_Body" class="toast-body">
-                        Canjea este cupon del 8<i class="fas fa-percentage"></i> en nuestra tienda: CrafTTOattacK452
-                    </div>
+    <!-- Rediseña los Alerts-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body id="Body">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md fixed-top Header">
+            <!-- Container wrapper -->
+            <div class="container">
+                <!-- Navbar brand -->
+                <a class="navbar-brand Sub-Botones" role="button" aria-current="page">
+                    <img src="https://i.ibb.co/N1031M7/logoof.png" onclick="Toasty( )" alt="" class="d-inline-block">
+                    <h4><b>BIENVENIDO</b></h4>
+                </a>
+                <button id="BOTON_MENU" class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul id="Botones" class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a role="button" class="nav-link" aria-current="page" href="#TECNICAS"><b>Tecnicas</b></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row">
+
+                        <li class="nav-item">
+                            <a id="btn_login" class="btn px-3" href="Login.html" role="button" aria-expanded="false">
+                                <b>LOGIN</b>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="btn_sing-up" class="btn px-3" href="Sing_Up.html" role="button"
+                                aria-expanded="false">
+                                <b>SIGN-UP</b>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="btn_Tienda" class="btn px-3" href="TIENDA.html" role="button" aria-expanded="false">
+                                <b>STORE</b>
+                            </a>
+                        </li>
+                        <li class="nav-item dark-mode-button btn px-3" id="BTN_OSCURO" for="dark-mode" type="checkbox"
+                            onclick="document.documentElement.classList.toggle('dark-mode')">
+                            <label id="dark-mode">
+                                <i class="fas fa-sun fa-lg"></i>
+                            </label>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="toast-container fixed-bottom p-3">
-                <!-- Then put toasts within -->
-                <div id="EpicToast4" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div id="Toast_Header" class="toast-header">
-                        <img src="https://i.ibb.co/9nvtgB6/tesoro.png" class="rounded me-2" alt="Tesoro" width="30rem"
-                            height="30rem">
-                        <strong class="me-auto">Felicidades has encontrado uno de los tesoros 🎉🎉</strong>
-                        <small class="text-white"><b></b></small>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div id="Toast_Body" class="toast-body">
-                        Canjea este cupon del 5<i class="fas fa-percentage"></i> en nuestra tienda: SlMnS331
-                    </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+        <!-- Position it: -->
+        <div class="toast-container fixed-bottom p-3">
+            <!-- Then put toasts within -->
+            <div id="EpicToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div id="Toast_Header" class="toast-header">
+                    <img src="https://i.ibb.co/9nvtgB6/tesoro.png" class="rounded me-2" alt="Tesoro" width="30rem"
+                        height="30rem">
+                    <strong class="me-auto">Felicidades has encontrado uno de los tesoros 🎉🎉</strong>
+                    <small class="text-white"><b></b></i></b></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div id="Toast_Body" class="toast-body">
+                    Canjea este cupon del 10<i class="fas fa-percentage"></i> en nuestra tienda: TrMdRS3108
                 </div>
             </div>
-            <div class="toast-container fixed-bottom p-3">
-                <!-- Then put toasts within -->
-                <div id="EpicToast5" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div id="Toast_Header" class="toast-header">
-                        <img src="https://i.ibb.co/9nvtgB6/tesoro.png" class="rounded me-2" alt="Tesoro" width="30rem"
-                            height="30rem">
-                        <strong class="me-auto">Felicidades has encontrado uno de los tesoros 🎉🎉</strong>
-                        <small class="text-white"><b></b></small>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                    <div id="Toast_Body" class="toast-body">
-                        Canjea este cupon del 3<i class="fas fa-percentage"></i> en nuestra tienda: BgRe98
-                    </div>
+        </div>
+        <div class="toast-container fixed-bottom p-3">
+            <!-- Then put toasts within -->
+            <div id="EpicToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div id="Toast_Header" class="toast-header">
+                    <img src="https://i.ibb.co/9nvtgB6/tesoro.png" class="rounded me-2" alt="Tesoro" width="30rem"
+                        height="30rem">
+                    <strong class="me-auto">Felicidades has encontrado uno de los tesoros 🎉🎉</strong>
+                    <small class="text-white"><b></b></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div id="Toast_Body" class="toast-body">
+                    Canjea este cupon del 12<i class="fas fa-percentage"></i> en nuestra tienda: YeRaNIeR831
                 </div>
             </div>
-        </header>
-        <main id="main">
-            <div class="TITULO_PRINCIPAL">
-                <h1> <i class="fas fa-dragon"></i><i class="far fa-window-minimize"></i><i class="fas fa-feather-alt"></i><b>CRAFT TO ATTA<a onclick="Toasty2( )">C</a>K ⚔️</b>
-                </h1>
+        </div>
+        <div class="toast-container fixed-bottom p-3">
+            <!-- Then put toasts within -->
+            <div id="EpicToast3" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div id="Toast_Header" class="toast-header">
+                    <img src="https://i.ibb.co/9nvtgB6/tesoro.png" class="rounded me-2" alt="Tesoro" width="30rem"
+                        height="30rem">
+                    <strong class="me-auto">Felicidades has encontrado uno de los tesoros 🎉🎉</strong>
+                    <small class="text-white"><b></b></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div id="Toast_Body" class="toast-body">
+                    Canjea este cupon del 8<i class="fas fa-percentage"></i> en nuestra tienda: CrafTTOattacK452
+                </div>
             </div>
-            <span id="Titulo1" class="d-block p-2 text-center"><b>¿QUIÉNES SOMOS?</b></span>
-            <div id="Texto1" class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-9 columna1">
-                     Somos John, Lizeth y Xiomara, programadores de software en crecimiento, compañeros de equipo.
-                     Craft to attack, surgió del gusto que tenemos hacia lo innovador, al cómo expresar lo que sentimos por medio
-                     del arte,en este caso, las manualidades.Somos personas muy comprometidas con lo que hacemos, esto se ve reflejado en
-                     nuestros
-                     productos, con mucho amor y dedicación; con un servicio al cliente, donde se aceptan sugerencias y reclamos.
-                     <br><br>¡<a onclick="Toasty5( )">Explora</a> nuestra página, déjate sorprender, estamos a tu servicio!. 
-                     Somos personas muy comprometidas con lo que hacemos, esto se ve reflejado en nuestros
-                     productos, con mucho amor y dedicación; con un servicio al cliente, donde se aceptan sugerencias y reclamos.
-                     <br>En nuestro emprendimiento, podrás encontrar múltiples manualidades que podrás comprar para ti, incluso
-                     pueden llegar a
-                     ser un regalo original y muy estético para sorprender a los que más quieres.
-                     ¡Explora nuestra página, déjate sorprender, estamos a tu servicio!
-                    </div>
+        </div>
+        <div class="toast-container fixed-bottom p-3">
+            <!-- Then put toasts within -->
+            <div id="EpicToast4" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div id="Toast_Header" class="toast-header">
+                    <img src="https://i.ibb.co/9nvtgB6/tesoro.png" class="rounded me-2" alt="Tesoro" width="30rem"
+                        height="30rem">
+                    <strong class="me-auto">Felicidades has encontrado uno de los tesoros 🎉🎉</strong>
+                    <small class="text-white"><b></b></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div id="Toast_Body" class="toast-body">
+                    Canjea este cupon del 5<i class="fas fa-percentage"></i> en nuestra tienda: SlMnS331
+                </div>
+            </div>
+        </div>
+        <div class="toast-container fixed-bottom p-3">
+            <!-- Then put toasts within -->
+            <div id="EpicToast5" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div id="Toast_Header" class="toast-header">
+                    <img src="https://i.ibb.co/9nvtgB6/tesoro.png" class="rounded me-2" alt="Tesoro" width="30rem"
+                        height="30rem">
+                    <strong class="me-auto">Felicidades has encontrado uno de los tesoros 🎉🎉</strong>
+                    <small class="text-white"><b></b></small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div id="Toast_Body" class="toast-body">
+                    Canjea este cupon del 3<i class="fas fa-percentage"></i> en nuestra tienda: BgRe98
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="TITULO_PRINCIPAL">
+            <h1> <i class="fas fa-dragon"></i><i class="far fa-window-minimize"></i><i
+                    class="fas fa-feather-alt"></i><b>CRAFT TO ATTA<a onclick="Toasty2( )">C</a>K ⚔️</b>
+            </h1>
+        </div>
+        <span id="Titulo1" class="d-block p-2 text-center"><b>¿QUIÉNES SOMOS?</b></span>
+        <div id="Texto1" class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 columna1">
+                    Somos John, Lizeth y Xiomara, programadores de software en crecimiento, compañeros de equipo.
+                    Craft to attack, surgió del gusto que tenemos hacia lo innovador, al cómo expresar lo que sentimos
+                    por medio
+                    del arte,en este caso, las manualidades.Somos personas muy comprometidas con lo que hacemos, esto se
+                    ve reflejado en
+                    nuestros
+                    productos, con mucho amor y dedicación; con un servicio al cliente, donde se aceptan sugerencias y
+                    reclamos.
+                    <br><br>¡<a onclick="Toasty5( )">Explora</a> nuestra página, déjate sorprender, estamos a tu
+                    servicio!.
+                    Somos personas muy comprometidas con lo que hacemos, esto se ve reflejado en nuestros
+                    productos, con mucho amor y dedicación; con un servicio al cliente, donde se aceptan sugerencias y
+                    reclamos.
+                    <br>En nuestro emprendimiento, podrás encontrar múltiples manualidades que podrás comprar para ti,
+                    incluso
+                    pueden llegar a
+                    ser un regalo original y muy estético para sorprender a los que más quieres.
+                    ¡Explora nuestra página, déjate sorprender, estamos a tu servicio!
+                </div>
                 <div class="col-md text-center columnaimg">
                     <img src=" https://i.ibb.co/t88W08n/logoof.png" alt="...">
                 </div>
@@ -183,9 +196,11 @@
                 </div>
                 <div class="col-md" id="Historia">
                     <br>
-                    <p id="Texto2"  dir="rtl">Las manualidades son un arte con tradición milenaria, es decir, es una práctica muy antigua, la
+                    <p id="Texto2" dir="rtl">Las manualidades son un arte con tradición milenaria, es decir, es una
+                        práctica muy antigua, la
                         cual se cree haber comenzado con la historia del hombre mismo. Las primeras civilizaciones
-                        tuvieron la necesidad de crear utensilios para uso personal, con sus propias manos y creatividad.
+                        tuvieron la necesidad de crear utensilios para uso personal, con sus propias manos y
+                        creatividad.
                         Si nos vamos a la definición de manualides encontramos que todas esas primeras piezas son
                         consideradas arte manual. Las manualidades también tuvieron un segundo auge durante el
                         periodo del Renacimiento en Europa, donde se desarrollo una revolución cultural en el arte en
@@ -200,100 +215,129 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-9 columna1">
-                    <p id="Texto3" >Ayudan a desarrollar la concentración, también estimulan las habilidades motoras y creativas. Sirven igualmente para
-                        reforzar la autoestima y como terapia para aquellas personas que padecen alzhéimer o alguna discapacidad. Pero sobre
-                        todo es una buena forma de aliviar el estrés y arrinconar las preocupaciones del día a día.Aunque las manualidades pueden 
+                    <p id="Texto3">Ayudan a desarrollar la concentración, también estimulan las habilidades motoras y
+                        creativas. Sirven igualmente para
+                        reforzar la autoestima y como terapia para aquellas personas que padecen alzhéimer o alguna
+                        discapacidad. Pero sobre
+                        todo es una buena forma de aliviar el estrés y arrinconar las preocupaciones del día a
+                        día.Aunque las manualidades pueden
                         presentar diferentes niveles de dificultad, suelen requerir la coordinación de diferentes
                         elementos para llevarlas a cabo.
                         <br>
-                        Una de las grandes ventajas de las manualidades es que puedes crear grandes obras de arte con muy poco material y algo
+                        Una de las grandes ventajas de las manualidades es que puedes crear grandes obras de arte con
+                        muy poco material y algo
                         de <a onclick="Toasty3( )">creatividad</a>.
                         Además, puedes emplear diferentes materiales reciclados para darles un segundo uso.
                         De esta manera, además de ahorrarte unos cuantos euros, estarás cuidando del medio ambiente.
-                        
+
                     </p>
                 </div>
                 <div class="col-md text-center columnaimg3">
-                    <img src="https://s03.s3c.es/imag/_v0/770x420/c/7/1/dia-mundial-del-cerebro-dreamsitme.png" alt="..."
-                    >
+                    <img src="https://s03.s3c.es/imag/_v0/770x420/c/7/1/dia-mundial-del-cerebro-dreamsitme.png"
+                        alt="...">
                 </div>
-                
+
             </div>
-        </div> 
+        </div>
         <a name="TECNICAS"></a>
         <span id="Titulo3" class="d-block p-2 text-center"><b>TÉCNICAS</b></span>
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-6">
-                <div class="col" >
+                <div class="col">
                     <div id="Card_Tittle" class="card-header text-center  border-danger"><b>LA PINTURA</b></div>
                     <div class="card-body">
                         <div class="bg-image hover-overlay ripple">
                             <br>
-                            <img src="https://www.vippng.com/png/detail/146-1462787_pinturas-tarros-de-pintura-png.png" class="img-fluid" />
+                            <img src="https://www.vippng.com/png/detail/146-1462787_pinturas-tarros-de-pintura-png.png"
+                                class="img-fluid" />
                             <br>
                             <a href="#!">
                                 <div class="mask" style="background-color: rgba(147, 145, 248, 0.2);"></div>
                             </a>
                         </div>
                         <h5 class="card-title"></h5>
-                        <p id="Cartext" class="card-text">Es el arte de representar motivos figurativos o abstractos sobre un soporte plano mediante materiales compuesto por un pigmento mezclando con aglutinante, que le da la consistencia y permiten la fijación en un soporte.
-                            Las diferentes técnicas de pintura pueden dividirse según el medio en que se disuelven y agruparse en dos grandes categorías: secas y húmedas.
-                            <br>Se trata de una de las Bellas Artes de la humanidad, junto con la literatura, la escultura, la música, la danza, la arquitectura, el cine, la fotografía y la historieta. Y es probablemente una de las más antiguas que se conocen, comprendiendo todas las creaciones artísticas hechas sobre
+                        <p id="Cartext" class="card-text">Es el arte de representar motivos figurativos o abstractos
+                            sobre un soporte plano mediante materiales compuesto por un pigmento mezclando con
+                            aglutinante, que le da la consistencia y permiten la fijación en un soporte.
+                            Las diferentes técnicas de pintura pueden dividirse según el medio en que se disuelven y
+                            agruparse en dos grandes categorías: secas y húmedas.
+                            <br>Se trata de una de las Bellas Artes de la humanidad, junto con la literatura, la
+                            escultura, la música, la danza, la arquitectura, el cine, la fotografía y la historieta. Y
+                            es probablemente una de las más antiguas que se conocen, comprendiendo todas las creaciones
+                            artísticas hechas sobre
                             superficies.
                         </p>
-        
+
                     </div>
-                    <div id="Caricon"class="card-footer border-danger text-center"><i class="fas fa-palette"></i></div>
+                    <div id="Caricon" class="card-footer border-danger text-center"><i class="fas fa-palette"></i></div>
                 </div>
-        
+
                 <div class="col">
                     <div id="Card_Tittle2" class="card-header text-center border-danger"><b>EL DIBUJO</b></div>
                     <div class="card-body">
                         <div class="bg-image hover-overlay ripple">
-                            <img src="https://cdn.pixabay.com/photo/2017/01/12/16/19/kit-1975078_960_720.png" class="img-fluid" />
+                            <img src="https://cdn.pixabay.com/photo/2017/01/12/16/19/kit-1975078_960_720.png"
+                                class="img-fluid" />
                             <a href="#!">
                                 <div class="mask" style="background-color: rgba(147, 145, 248, 0.2);"></div>
                             </a>
                         </div>
                         <h5 class="card-title"></h5>
-                        <p id="Cartext2" class="card-text">El dibujo es un procedimiento que puede aparecer solo o como base para aplicar otras técnicas.
-                            Hay que distinguir entre el dibujo artístico (realizado a mano alzada) y el dibujo técnico (realizado con instrumentos de dibujo). El dibujo artístico busca plasmar sensaciones personales, influenciadas por la imaginación y las vivencias individuales, por lo que resulta eminentemente subjetivo, en cambio el dibujo técnico pretende ser objetivo y representar los objetos lo más parecido a la realidad, usando escalas, a fin de proporcionar la información técnica necesaria para su análisis técnico.
-                            Las técnicas más empleadas son los lápices, el carboncillo o la tinta, los pasteles, lápices de cera.
+                        <p id="Cartext2" class="card-text">El dibujo es un procedimiento que puede aparecer solo o como
+                            base para aplicar otras técnicas.
+                            Hay que distinguir entre el dibujo artístico (realizado a mano alzada) y el dibujo técnico
+                            (realizado con instrumentos de dibujo). El dibujo artístico busca plasmar sensaciones
+                            personales, influenciadas por la imaginación y las vivencias individuales, por lo que
+                            resulta eminentemente subjetivo, en cambio el dibujo técnico pretende ser objetivo y
+                            representar los objetos lo más parecido a la realidad, usando escalas, a fin de
+                            proporcionar la información técnica necesaria para su análisis técnico.
+                            Las técnicas más empleadas son los lápices, el carboncillo o la tinta, los pasteles,
+                            lápices de cera.
                         </p>
                     </div>
-                    <div id="Caricon2" class="card-footer border-danger text-center" ><i class="fas fa-pencil-alt"></i></div>
+                    <div id="Caricon2" class="card-footer border-danger text-center"><i class="fas fa-pencil-alt"></i>
+                    </div>
                 </div>
-        
+
                 <div class="col">
                     <div id="Card_Tittle3" class="card-header text-center border-danger"><b>LA ESCULTURA</b></div>
                     <div class="card-body">
                         <div class="bg-image hover-overlay ripple">
                             <br>
-                            <img src="https://png.pngtree.com/element_our/20190530/ourlarge/pngtree-a-white-david-sculpture-image_1234965.jpg" class="img-fluid" />
-                           <br>
+                            <img src="https://png.pngtree.com/element_our/20190530/ourlarge/pngtree-a-white-david-sculpture-image_1234965.jpg"
+                                class="img-fluid" />
+                            <br>
                             <a href="#!">
                                 <div class="mask" style="background-color:rgba(147, 145, 248, 0.2);"></div>
                             </a>
                         </div>
                         <h5 class="card-title"></h5>
-                        <p id="Cartext3" class="card-text">La escultura es, como la pintura, un medio de expresión plástica. Su finalidad es la creación de obras tridimensionales a partir de diversos materiales: piedra, barro, hierro...
-                            El escultor se expresa creando volúmenes y conformando espacios. Hay dos tipos de esculturas: las exentas y en relieve.
-                            <br>La escultura exenta o de bulto redondo: es aquella que representa un volumen completo y, por tanto, puede ser observada por todas sus caras.
-                            El relieve: una forma escultórica que aparece adherida a una superficie que le sirve de fondo. 
-                            Se podria decir que la escultura tiene un gran componente de imitación, y también de creación original, ya que la representación puede abarcar desde objetos,personas, animales y conceptos.
-                
+                        <p id="Cartext3" class="card-text">La escultura es, como la pintura, un medio de expresión
+                            plástica. Su finalidad es la creación de obras tridimensionales a partir de diversos
+                            materiales: piedra, barro, hierro...
+                            El escultor se expresa creando volúmenes y conformando espacios. Hay dos tipos de
+                            esculturas: las exentas y en relieve.
+                            <br>La escultura exenta o de bulto redondo: es aquella que representa un volumen completo y,
+                            por tanto, puede ser observada por todas sus caras.
+                            El relieve: una forma escultórica que aparece adherida a una superficie que le sirve de
+                            fondo.
+                            Se podria decir que la escultura tiene un gran componente de imitación, y también de
+                            creación original, ya que la representación puede abarcar desde objetos,personas, animales y
+                            conceptos.
+
                         </p>
                     </div>
-                    <div id="Caricon3" class="card-footer border-danger text-center" ><i class="fas fa-tools"></i></div>
+                    <div id="Caricon3" class="card-footer border-danger text-center"><i class="fas fa-tools"></i></div>
                 </div>
-        
+
                 <div class="col">
                     <div id="Card_Tittle4" class="card-header text-center border-danger"><b>LA FOTOGRAFIA</b></div>
                     <div class="card-body">
                         <div class="bg-image hover-overlay ripple">
                             <br>
                             <br>
-                            <img src="https://i.pinimg.com/originals/56/12/62/561262682605c981dc84521d63939ecb.png" class="img-fluid" />
+                            <img src="https://i.pinimg.com/originals/56/12/62/561262682605c981dc84521d63939ecb.png"
+                                class="img-fluid" />
                             <br>
                             <br>
                             <a href="#!">
@@ -301,43 +345,60 @@
                             </a>
                         </div>
                         <h5 class="card-title"></h5>
-                        <p id="Cartext4" class="card-text">La fotografía es una de las artes contemporáneas, que al igual que la pintura, la escultura o la música pretenden ser una forma de expresión del artista para expresar emociones, sentimientos y pensamientos.
-                            <br>La fotografía consiste básicamente en una forma de captar un instante único e irrepetible en el tiempo.
-                            <br>La palabra proviene del griego Foto= Luz / Grafis = Pintar o dibujar es decir que la fotografía es pintar con luz.
-                            <br>Actualmente incorporan técnicas de la computación en sus fotos, siendo el software Adobe Photoshop uno de los más utilizados, lo que amplía el campo de acción comunicativa de las imágenes.Esta es considerada como un invento moderno.
+                        <p id="Cartext4" class="card-text">La fotografía es una de las artes contemporáneas, que al
+                            igual que la pintura, la escultura o la música pretenden ser una forma de expresión del
+                            artista para expresar emociones, sentimientos y pensamientos.
+                            <br>La fotografía consiste básicamente en una forma de captar un instante único e
+                            irrepetible en el tiempo.
+                            <br>La palabra proviene del griego Foto= Luz / Grafis = Pintar o dibujar es decir que la
+                            fotografía es pintar con luz.
+                            <br>Actualmente incorporan técnicas de la computación en sus fotos, siendo el software
+                            Adobe Photoshop uno de los más utilizados, lo que amplía el campo de acción comunicativa
+                            de las imágenes.Esta es considerada como un invento moderno.
                             <br>
                         </p>
                     </div>
                     <div id="Caricon4" class="card-footer border-danger text-center"><i class="fas fa-camera"></i></div>
                 </div>
-        
+
                 <div class="col">
                     <div id="Card_Tittle5" class="card-header text-center border-danger"><b>EL ORIGAMI</b></div>
                     <div class="card-body">
                         <div class="bg-image hover-overlay ripple">
-                            <img src="https://images.vexels.com/media/users/3/211103/isolated/preview/2863b96d5ad61e09346a3a2582a341b7-ilustracion-de-pajaro-purpura-de-origami.png" class="img-fluid" />
+                            <img src="https://images.vexels.com/media/users/3/211103/isolated/preview/2863b96d5ad61e09346a3a2582a341b7-ilustracion-de-pajaro-purpura-de-origami.png"
+                                class="img-fluid" />
                             <a href="#!">
                                 <div class="mask" style="background-color:rgba(147, 145, 248, 0.2);"></div>
                             </a>
                         </div>
                         <h5 class="card-title"></h5>
-                        <p id="Cartext5" class="card-text">Origami es un término japonés, aceptado por el diccionario de la Real Academia Española (RAE), que se emplea como sinónimo de papiroflexia. Se trata del arte que consiste en la creación de figuras doblando y plegando adecuadamente un trozo de papel.
+                        <p id="Cartext5" class="card-text">Origami es un término japonés, aceptado por el diccionario de
+                            la Real Academia Española (RAE), que se emplea como sinónimo de papiroflexia. Se trata del
+                            arte que consiste en la creación de figuras doblando y plegando adecuadamente un trozo de
+                            papel.
                             <br>
-                            El origami se basa en el plegado: no se utilizan tijeras ni se recurre a pegamentos. La clave radica en doblar el papel por el lugar preciso, repitiendo la acción la cantidad de veces que sea necesaria y en el orden requerido.
+                            El origami se basa en el plegado: no se utilizan tijeras ni se recurre a pegamentos. La
+                            clave radica en doblar el papel por el lugar preciso, repitiendo la acción la cantidad de
+                            veces que sea necesaria y en el orden requerido.
                             <br>
-                            El origen del origami se remonta a los primeros siglos de nuestra era. Surgió en el territorio chino y luego pasó a Japón, donde se popularizó. Su auge llegó con el abaratamiento del papel, que pasó a estar disponible para toda la sociedad, ampliando los resultados.
+                            El origen del origami se remonta a los primeros siglos de nuestra era. Surgió en el
+                            territorio chino y luego pasó a Japón, donde se popularizó. Su auge llegó con el
+                            abaratamiento del papel, que pasó a estar disponible para toda la sociedad, ampliando los
+                            resultados.
                             <br>
                         </p>
 
                     </div>
-                    <div id="Caricon5" class="card-footer border-danger text-center"><i class="far fa-paper-plane"></i></div>
+                    <div id="Caricon5" class="card-footer border-danger text-center"><i class="far fa-paper-plane"></i>
+                    </div>
                 </div>
-        
+
                 <div class="col">
                     <div id="Card_Tittle6" class="card-header text-center border-danger"><b>LA IMPRESION</b></div>
                     <div class="card-body">
                         <div class="bg-image hover-overlay ripple">
-                            <img src="https://avisosenacrilico.com.co/wp-content/uploads/2015/04/impresion-bogota-acrilicos.png" class="img-fluid" />
+                            <img src="https://avisosenacrilico.com.co/wp-content/uploads/2015/04/impresion-bogota-acrilicos.png"
+                                class="img-fluid" />
                             <br>
                             <br>
                             <a href="#!">
@@ -345,15 +406,22 @@
                             </a>
                         </div>
                         <h5 class="card-title"></h5>
-                        <p id="Cartext6" class="card-text">La impresión es la técnica para aplicar tinta sobre un soporte.
-                            <br>Dentro de las diferentes técnicas de impresión <a onclick="Toasty4( )">encontramos</a>: offset, serigrafía, monotipia, linotipia, en linóleo, termografía…
-                            <br>Las originarias superficies de piedra pasan a ser planchas de aluminio, acero inoxidable y plástico. El método Offset moderno supone una de las impresiones más económicas gracias a esas planchas litográficas.
-                            <br>En la actualidad en la imprenta Offset podemos encontrar duplicadores pequeños que se utilizan para boletines, folletos…hasta prensas enormes que imprimen millones de ejemplares de productos de embalaje, revistas, catálogos, periodicos,albums, libros, cartas, estampillas, etc. 
+                        <p id="Cartext6" class="card-text">La impresión es la técnica para aplicar tinta sobre un
+                            soporte.
+                            <br>Dentro de las diferentes técnicas de impresión <a onclick="Toasty4( )">encontramos</a>:
+                            offset, serigrafía, monotipia, linotipia, en linóleo, termografía…
+                            <br>Las originarias superficies de piedra pasan a ser planchas de aluminio, acero inoxidable
+                            y plástico. El método Offset moderno supone una de las impresiones más económicas gracias a
+                            esas planchas litográficas.
+                            <br>En la actualidad en la imprenta Offset podemos encontrar duplicadores pequeños que se
+                            utilizan para boletines, folletos…hasta prensas enormes que imprimen millones de ejemplares
+                            de productos de embalaje, revistas, catálogos, periodicos,albums, libros, cartas,
+                            estampillas, etc.
                         </p>
                     </div>
                     <div id="Caricon6" class="card-footer border-danger text-center"><i class="fas fa-print"></i></div>
                 </div>
-        
+
             </div>
         </div>
     </main>
@@ -366,31 +434,37 @@
                 <span><b><i><a onclick="Toasty3( )">Conocenos</a> tambien en nuestras redes sociales</i></b></span>
             </div>
             <!-- Left -->
-    
+
             <!-- Right -->
             <div>
-                <section >
+                <section>
                     <!-- Facebook -->
-                    <a href="https://www.facebook.com/CRAFT-to-Attack-214629343899649" class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
-                            class="fab fa-facebook-f fa-lg"></i></a>
-                
+                    <a href="https://www.facebook.com/CRAFT-to-Attack-214629343899649"
+                        class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                        role="button"><i class="fab fa-facebook-f fa-lg"></i></a>
+
                     <!-- Twitter -->
-                    <a href="https://twitter.com/CraftToAttack1" class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+                    <a href="https://twitter.com/CraftToAttack1" class="btn btn-primary btn-floating m-1"
+                        style="background-color: #55acee;" href="#!" role="button"><i
                             class="fab fa-twitter fa-lg"></i></a>
-                
+
                     <!-- Whatsapp -->
-                    <a href="https://api.whatsapp.com/send?phone=573229097126" class="btn btn-primary btn-floating m-1" style="background-color: #00bb2d;" href="#!" role="button">
-                    <i class="fab fa-whatsapp fa-lg"></i></a>
-                
+                    <a href="https://api.whatsapp.com/send?phone=573229097126" class="btn btn-primary btn-floating m-1"
+                        style="background-color: #00bb2d;" href="#!" role="button">
+                        <i class="fab fa-whatsapp fa-lg"></i></a>
+
                     <!-- Instagram -->
-                    <a href="https://www.instagram.com/craft_to_attack?r=nametag" class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
-                            class="fab fa-instagram fa-lg"></i></a>
-                
+                    <a href="https://www.instagram.com/craft_to_attack?r=nametag"
+                        class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                        role="button"><i class="fab fa-instagram fa-lg"></i></a>
+
                     <!-- Youtube -->
-                    <a href="https://www.youtube.com/" class="btn btn-primary btn-floating m-1" style="background-color: #ff0000;" href="#!" role="button">
-                            <i class="fab fa-youtube fa-lg"></i></a>
+                    <a href="https://www.youtube.com/" class="btn btn-primary btn-floating m-1"
+                        style="background-color: #ff0000;" href="#!" role="button">
+                        <i class="fab fa-youtube fa-lg"></i></a>
                     <!-- Github -->
-                    <a href="https://github.com/johnb123-a/CRAFT_TO_ATTACK" class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
+                    <a href="https://github.com/johnb123-a/CRAFT_TO_ATTACK" class="btn btn-primary btn-floating m-1"
+                        style="background-color: #333333;" href="#!" role="button"><i
                             class="fab fa-github fa-lg"></i></a>
                 </section>
                 <!-- Section: Social media -->
@@ -414,7 +488,7 @@
                                 </p>
                             </div>
                             <!--Grid column-->
-            
+
                             <!--Grid column-->
                             <div class="col-md-5 col-12">
                                 <!-- Email input -->
@@ -424,7 +498,7 @@
                                 </div>
                             </div>
                             <!--Grid column-->
-            
+
                             <!--Grid column-->
                             <div class="col-auto">
                                 <!-- Submit button -->
@@ -450,7 +524,7 @@
                     <div id="Columna_footer0" class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 id="Titulo_footer" class="text-uppercase fw-bold mb-4">
-                          <i class="fas fa-building"></i> CRAFT TO ATTACK
+                            <i class="fas fa-building"></i> CRAFT TO ATTACK
                         </h6>
                         <p>
                             Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -461,7 +535,7 @@
                     <!-- Grid column -->
                     <div id="Columna_footer2" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
-                        <h6 id="Titulo_footer3"class="text-uppercase fw-bold mb-4">
+                        <h6 id="Titulo_footer3" class="text-uppercase fw-bold mb-4">
                             PREGUNTAS FRECUENTES
                         </h6>
                         <p>
@@ -478,7 +552,7 @@
                         </p>
                     </div>
                     <!-- Grid column -->
-    
+
                     <!-- Grid column -->
                     <div id="Columna_footer3" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <!-- Links -->
@@ -499,7 +573,7 @@
                         </p>
                     </div>
                     <!-- Grid column -->
-    
+
                     <!-- Grid column -->
                     <div id="Columna_footer4" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
@@ -520,7 +594,7 @@
             </div>
         </section>
         <!-- Section: Links  -->
-    
+
         <!-- Copyright -->
         <div id="Sub-Footer" class="text-center p-3">
             <i class="far fa-copyright fa-lg"></i><b> 2021 Copyright: CRAFT TO ATTACK</b>
@@ -528,12 +602,12 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-    
+
     <!-- BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -547,10 +621,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
-    
+
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
-    
+
 
     <script>
         var option =
@@ -599,7 +673,7 @@
     <!-- FIREBASE SCRITPS-->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-    
+
     <!-- TODO: Add SDKs for Firebase products that you want to use
                                  https://firebase.google.com/docs/web/setup#available-libraries -->
     <!--<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>-->
@@ -609,7 +683,7 @@
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         var firebaseConfig = {
-          apiKey: "AIzaSyAAA4R2UkACFqX8Tjb-f-xHp_G3kbMaR84",
+            apiKey: "AIzaSyAAA4R2UkACFqX8Tjb-f-xHp_G3kbMaR84",
             authDomain: "craft-to-attack.firebaseapp.com",
             databaseURL: "https://craft-to-attack-default-rtdb.firebaseio.com",
             projectId: "craft-to-attack",
@@ -625,5 +699,6 @@
         var db = firebase.firestore()
     </script>
     <script src="Coleccion.js"></script>
-    </body>
+</body>
+
 </html>

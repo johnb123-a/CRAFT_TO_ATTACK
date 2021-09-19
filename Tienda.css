@@ -1,35 +1,39 @@
-
-*{
+* {
   box-sizing: border-box;
-  padding:0rem;
-  margin:0rem;
+  padding: 0rem;
+  margin: 0rem;
 }
 /*COLOR FONDO*/
-#body{
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(213,209,209,0.1881127450980392) 43%, rgba(85,85,85,0.5298494397759104) 78%);
-  background-attachment: fixed 
+#body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(213, 209, 209, 0.1881127450980392) 43%,
+    rgba(85, 85, 85, 0.5298494397759104) 78%
+  );
+  background-attachment: fixed;
 }
 .super-header {
   background: rgba(0, 0, 0, 0.875);
   padding: -0.5rem;
 }
-#user-name{
+#user-name {
   color: rgb(255, 255, 255);
   text-align: right;
   padding-right: 1rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   padding-left: 1rem;
   margin-top: 0rem;
   margin-left: -0.1rem;
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
-  color:rgb(255, 255, 255);
-  padding:1rem 1rem 1rem 1rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 0.5rem;
   font-size: 1rem;
 }
-#user-name:hover{
+#user-name:hover {
   color: rgba(27, 175, 145, 0.895);
   transition: all 0.4s linear;
   cursor: default;
@@ -37,31 +41,30 @@
 .header {
   background: rgba(0, 0, 0, 0.875);
   padding: 1.2rem;
-
 }
-header, .alert{
+header,
+.alert {
   z-index: 100;
 }
-.wolf{
+.wolf {
   color: #fff;
   font-size: 2.5rem;
-  padding:0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
-.wolf:hover{
+.wolf:hover {
   color: rgb(255, 0, 0);
   transition: all 0.4s linear;
   cursor: pointer;
 }
-.cont2 img{
- border-radius: 1rem;
-
+.cont2 img {
+  border-radius: 1rem;
 }
-#pic-tam{
-  padding:3rem 0.5rem 0rem 4rem;
+#pic-tam {
+  padding: 3rem 0.5rem 0rem 4rem;
 }
-.demo-avatar{
+.demo-avatar {
   top: 1rem;
-  position: right ;
+  position: right;
   display: inline-block;
   width: 3rem;
   height: 3rem;
@@ -70,263 +73,255 @@ header, .alert{
 }
 
 /*LISTA DESPLEGABLE*/
-.dropdown{
-  margin:0.5rem 0.5rem 0.5rem 0.5rem;
-  padding:0.3rem 0.3rem 0.3rem 0.3rem;
-  color:#ffffff;
+.dropdown {
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+  color: #ffffff;
   margin-top: 0rem;
   margin-left: -0.1rem;
-  font-family: 'Courier New', Courier, monospace;
-  background:rgba(27, 175, 145, 0.895);
+  font-family: "Courier New", Courier, monospace;
+  background: rgba(27, 175, 145, 0.895);
   border-radius: 0.5rem;
 }
-#body .dropdown .master{
-  
-  color:#ffffff;
-  font-family: 'Courier New', Courier, monospace;
-  background-color:rgba(27, 175, 145, 0.895);
-  background:none;
+#body .dropdown .master {
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(27, 175, 145, 0.895);
+  background: none;
   border-radius: 0.5rem;
 }
-#body .dropdown:hover{
+#body .dropdown:hover {
   transition: all 0.4s linear;
-  background-color:rgba(157, 255, 0, 0.748);
-  background:rgba(157, 255, 0, 0.748);
+  background-color: rgba(157, 255, 0, 0.748);
+  background: rgba(157, 255, 0, 0.748);
   border-radius: 0.8rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-.dropdown .master{
-  color:rgb(255, 255, 255);
+.dropdown .master {
+  color: rgb(255, 255, 255);
 }
-.dropdown .master:hover{
-  color:rgb(255, 255, 255);
+.dropdown .master:hover {
+  color: rgb(255, 255, 255);
 }
-#body .dropdown-item:hover{
-  background:#27AE60;
+#body .dropdown-item:hover {
+  background: #27ae60;
 }
-#body .dropdown-item{
-  background-color:rgba(255, 255, 255, 0.748);
-  color:rgb(0, 0, 0);
+#body .dropdown-item {
+  background-color: rgba(255, 255, 255, 0.748);
+  color: rgb(0, 0, 0);
 }
-#body #BTN_CARRO a{
+#body #BTN_CARRO a {
   background: none;
 }
 
-#body #BTN_CARRO a .car{
-  margin:0.1rem 0rem -0.2rem -0.2rem;
-  padding:0.6rem 0.4rem 0.6rem 0.4rem;
+#body #BTN_CARRO a .car {
+  margin: 0.1rem 0rem -0.2rem -0.2rem;
+  padding: 0.6rem 0.4rem 0.6rem 0.4rem;
   margin-bottom: 0.5rem;
   text-align: center;
-  background:rgba(27, 175, 145, 0.895);
+  background: rgba(27, 175, 145, 0.895);
   font-size: 1.3rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   border-radius: 0.5rem;
 }
-#body #BTN_CARRO a .car:hover{
+#body #BTN_CARRO a .car:hover {
   transition: all 0.4s linear;
-  background-color:rgba(157, 255, 0, 0.748);
-  background:rgba(157, 255, 0, 0.748);
+  background-color: rgba(157, 255, 0, 0.748);
+  background: rgba(157, 255, 0, 0.748);
   border-radius: 0.8rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-#body #BTN_LOGOUT a{
-  background:none;
+#body #BTN_LOGOUT a {
+  background: none;
 }
-#body #BTN_LOGOUT{
+#body #BTN_LOGOUT {
   margin-top: 0.5rem;
   margin-left: -0.5rem;
-  background-color:rgba(27, 175, 145, 0.895);
-  width:2.5rem;
+  background-color: rgba(27, 175, 145, 0.895);
+  width: 2.5rem;
   height: 2.3rem;
   border-radius: 0.5rem;
   padding: 0.2rem 0.2rem 0.5rem 0.9rem;
-  
 }
-#body #BTN_LOGOUT a{
-  
+#body #BTN_LOGOUT a {
   color: rgb(255, 255, 255);
 }
 
-
-#Login{
-  margin:0rem -0rem -0.5rem 0.5rem;
-  padding:0.7rem 0.5rem 0rem 0.5rem;
+#Login {
+  margin: 0rem -0rem -0.5rem 0.5rem;
+  padding: 0.7rem 0.5rem 0rem 0.5rem;
   margin-bottom: 0.5rem;
-  background:rgba(27, 175, 145, 0.895);
+  background: rgba(27, 175, 145, 0.895);
   font-size: 1.3rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   border-radius: 0.5rem;
 }
-#Login:hover{
+#Login:hover {
   transition: all 0.4s linear;
-  background-color:rgba(157, 255, 0, 0.748);
-  background:rgba(157, 255, 0, 0.748);
+  background-color: rgba(157, 255, 0, 0.748);
+  background: rgba(157, 255, 0, 0.748);
   border-radius: 0.8rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-#Logout{
-  padding:0.8rem 0.5rem 0.01rem 0.6rem;
+#Logout {
+  padding: 0.8rem 0.5rem 0.01rem 0.6rem;
   margin-bottom: 0.5rem;
   text-align: center;
-  background:rgba(27, 175, 145, 0.895);
+  background: rgba(27, 175, 145, 0.895);
   font-size: 1.3rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   border-radius: 0.5rem;
 }
-#Logout:hover{
+#Logout:hover {
   transition: all 0.4s linear;
-  background-color:rgba(157, 255, 0, 0.748);
-  background:rgba(157, 255, 0, 0.748);
+  background-color: rgba(157, 255, 0, 0.748);
+  background: rgba(157, 255, 0, 0.748);
   border-radius: 0.8rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-
-
-
 
 /*TITULO PRINCIPAL*/
-.container>h1{
+.container > h1 {
   color: rgba(64, 213, 183, 0.895);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2rem;
-  text-shadow: 0 1px 0 #212529, 
-               0 2px 0 #212529,
-               0 3px 0 #212529,
-               0 4px 0 #212529,
-               0 5px 8px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 30px rgba(0,0,0,.15);
+  text-shadow: 0 1px 0 #212529, 0 2px 0 #212529, 0 3px 0 #212529,
+    0 4px 0 #212529, 0 5px 8px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 30px rgba(0, 0, 0, 0.15);
 
   text-align: center;
 }
 
-.cont2_1 .cont2{
+.cont2_1 .cont2 {
   background-color: rgba(0, 0, 0, 0.765);
-  background: linear-gradient(180deg, rgb(3, 3, 3), rgb(4, 30, 34),rgba(26, 18, 28, 0.457) );
+  background: linear-gradient(
+    180deg,
+    rgb(3, 3, 3),
+    rgb(4, 30, 34),
+    rgba(26, 18, 28, 0.457)
+  );
   animation: BgGradient 5s ease infinite;
 }
 
 /*TITULO DE LAS COLUMNAS*/
-.cont2_1 .cont2>h5{
+.cont2_1 .cont2 > h5 {
   color: rgba(27, 175, 145, 0.895);
-  text-shadow: 0 1px 0 rgb(0, 0, 0), 
-               0 2px 0 #0f0f0f;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 0 1px 0 rgb(0, 0, 0), 0 2px 0 #0f0f0f;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
 }
 /*LA DESCRIPCION DE LAS COLUMNAS*/
-.cont2_1 .cont2 .description{
+.cont2_1 .cont2 .description {
   color: rgb(255, 255, 255);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 /*PRECIO DE LAS COLUMNAS*/
-.cont2_1 .cont2 .text-precio{
+.cont2_1 .cont2 .text-precio {
   color: rgb(229, 255, 0);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-.cont .button{
-  background-color:#2ECC71;
-  color:rgb(0, 0, 0);
-  font-family: 'Courier New', Courier, monospace;
+.cont .button {
+  background-color: #2ecc71;
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
 }
-.cont .button:hover{
+.cont .button:hover {
   transition: all 0.4s linear;
-  background-color:rgba(157, 255, 0, 0.748);
-  background:rgba(157, 255, 0, 0.748);
+  background-color: rgba(157, 255, 0, 0.748);
+  background: rgba(157, 255, 0, 0.748);
   border-radius: 0.8rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-.cont .button2{
-  background-color:#2ECC71;
-  color:rgb(0, 0, 0);
-  font-family: 'Courier New', Courier, monospace;
+.cont .button2 {
+  background-color: #2ecc71;
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
   font-size: 0.8rem;
 }
 
-.cont .button2:hover{
+.cont .button2:hover {
   transition: all 0.4s linear;
-  background-color:rgba(157, 255, 0, 0.748);
-  background:rgba(157, 255, 0, 0.748);
+  background-color: rgba(157, 255, 0, 0.748);
+  background: rgba(157, 255, 0, 0.748);
   border-radius: 0.8rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-.cont .button2 a{
+.cont .button2 a {
   text-decoration: none;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
-.cont .button2 a:hover{
+.cont .button2 a:hover {
   transition: all 0.4s linear;
   text-decoration: none;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
-.col img{
-  margin:1rem;
-  width:90%;
-  height:13rem;
+.col img {
+  margin: 1rem;
+  width: 90%;
+  height: 13rem;
 }
 /*DESCRIPCION DE LA PAGINA PRINCIPAL*/
-.first_description{
+.first_description {
   height: auto;
   color: #fff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-.description{
+.description {
   height: 1.5rem;
   overflow: hidden;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-.description:hover{
+.description:hover {
   height: auto;
   animation-duration: 2400ms;
 }
-.carrito{
+.carrito {
   min-height: 10rem;
   margin: 0 auto;
-  margin-top:1rem;
+  margin-top: 1rem;
   width: 99%;
   background-color: rgb(0, 0, 0);
   color: white;
-  border-radius:1rem;
+  border-radius: 1rem;
 }
-.tbody{
-  font-family: 'Courier New', Courier, monospace;
+.tbody {
+  font-family: "Courier New", Courier, monospace;
   color: rgb(255, 255, 255);
 }
-.table__productos{
-  width:30rem;
-  min-width:1rem;
+.table__productos {
+  width: 30rem;
+  min-width: 1rem;
 }
-.table__productos h6{
-  margin-top:1.5rem;
+.table__productos h6 {
+  margin-top: 1.5rem;
   align-items: center;
 }
-.table__price{
-  width:25rem;
-  min-width:2rem;
-
+.table__price {
+  width: 25rem;
+  min-width: 2rem;
 }
 
-.ItemCarrito:hover{
- color: rgb(18, 192, 96);
- transition: all 0.4s linear;
+.ItemCarrito:hover {
+  color: rgb(18, 192, 96);
+  transition: all 0.4s linear;
 }
 
-.table__num{
-  width:15rem;
-  min-width:5rem;
-  height:5rem;
+.table__num {
+  width: 15rem;
+  min-width: 5rem;
+  height: 5rem;
 }
 
-.table__num > img{
+.table__num > img {
   min-width: 1rem;
-  width:5rem;
-  height:5rem;
+  width: 5rem;
+  height: 5rem;
   min-height: 1rem;
   object-fit: contain;
   border-radius: 0.8rem;
 }
-.table__cantidad > input{
+.table__cantidad > input {
   min-width: 1rem;
   width: 2.5rem;
   border: none;
@@ -340,73 +335,70 @@ header, .alert{
   padding: 0.2rem;
 }
 
-.hide, .remove{
+.hide,
+.remove {
   display: none;
 }
-#basura{
-  background:rgba(255, 0, 0, 0.781);
+#basura {
+  background: rgba(255, 0, 0, 0.781);
   color: white;
   border-radius: 2rem;
-} 
-#basura:hover{
-  background:rgba(255, 63, 63, 0.993);
+}
+#basura:hover {
+  background: rgba(255, 63, 63, 0.993);
   color: rgb(255, 255, 255);
   transition: all 0.4s linear;
-} 
-.text-table{
-  color:rgba(27, 175, 145, 0.895);
-  font-family: 'Courier New', Courier, monospace;
 }
-.itemCartTotal{
-  font-family: 'Courier New', Courier, monospace;
-  
+.text-table {
+  color: rgba(27, 175, 145, 0.895);
+  font-family: "Courier New", Courier, monospace;
 }
-.itemCartTotal:hover{
- color: rgb(255, 0, 0);
- cursor: default;
- transition: all 0.4s linear;
+.itemCartTotal {
+  font-family: "Courier New", Courier, monospace;
 }
-#BTN_COMPRAR{
-  background:#fff237;
-  color:#0f0f0f;
-  width:13rem;
+.itemCartTotal:hover {
+  color: rgb(255, 0, 0);
+  cursor: default;
+  transition: all 0.4s linear;
+}
+#BTN_COMPRAR {
+  background: #fff237;
+  color: #0f0f0f;
+  width: 13rem;
   min-width: 1rem;
 }
-#validar{
-  background:rgba(27, 175, 145, 0.895);
-  color:#0f0f0f;
-  width:10rem;
+#validar {
+  background: rgba(27, 175, 145, 0.895);
+  color: #0f0f0f;
+  width: 10rem;
   height: 2rem;
   min-width: 1rem;
   text-align: center;
 }
-.cupon{
-  color:rgba(27, 175, 145, 0.895);
-  font-family: 'Courier New', Courier, monospace;
+.cupon {
+  color: rgba(27, 175, 145, 0.895);
+  font-family: "Courier New", Courier, monospace;
+}
+.validarBt {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
-}
-.validarBt{
-    margin-top: 1rem;
-    margin-bottom:1rem;
-}
-   
-#BTN_COMPRAR:hover{
-  
-  background:#ffff0b;
-  color:#0f0f0f;
+#BTN_COMPRAR:hover {
+  background: #ffff0b;
+  color: #0f0f0f;
   transition: all 0.4s linear;
   border-radius: 0.6rem;
 }
-#PRUEBAS{
+#PRUEBAS {
   color: #0f0f0f;
-
 }
-#PRUEBAS:hover{
-  color:rgba(27, 175, 145, 0.895);
+#PRUEBAS:hover {
+  color: rgba(27, 175, 145, 0.895);
   transition: all 0.4s linear;
   cursor: default;
 }
 
-#BOTON_FINAL{
-  text-align:center;
+#BOTON_FINAL {
+  text-align: center;
 }

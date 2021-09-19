@@ -35,23 +35,28 @@
                         <a id="Devolver" class="btn btn-floating" href="TIENDA.html" role="button">
                             <i class="fas fa-arrow-circle-left fa-lg"></i>
                         </a>
-                        <b id="Titulo" class="text-white" style="font-family:'Courier New', Courier, monospace; font-size:1.3rem"> INVENTARIO DE CRAFT TO ⚔️</b>
-                        <button id="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')"
-                            class="btn px-3"><label for="dark-mode" class="dark-mode-button">
+                        <b id="Titulo" class="text-white"
+                            style="font-family:'Courier New', Courier, monospace; font-size:1.3rem"> INVENTARIO DE CRAFT
+                            TO ⚔️</b>
+                        <button id="dark-mode" type="checkbox"
+                            onclick="document.documentElement.classList.toggle('dark-mode')" class="btn px-3"><label
+                                for="dark-mode" class="dark-mode-button">
                                 <i id="MOD_DARK" class="fas fa-sun fa-lg"></i>
                         </button>
                     </div>
                     <div id="card_body" style="display:block;" class="card-body">
-                        
+
                         <div class="container">
                             <!-- Id input -->
                             <div id="id" style="display: block;" class="form-outline mt-1 mb-4">
-                                <input id="ID" type="text" id="form7Example1" class="form-control" onkeypress="return permite(event, 'num')" />
+                                <input id="ID" type="text" id="form7Example1" class="form-control"
+                                    onkeypress="return permite(event, 'num')" />
                                 <label id="ID_LABEL" class="form-label" for="form7Example1">Id</label>
                             </div>
                             <!-- Producto input -->
                             <div class="form-outline input-group mb-4">
-                                <input id="PRODUCTO"  type="text" class="form-control" onkeypress="return permite(event, 'car-min')" />
+                                <input id="PRODUCTO" type="text" class="form-control"
+                                    onkeypress="return permite(event, 'car-min')" />
                                 <label id="ID_LABEL" class="form-label " for="form7Example1">Producto\Cant.</label>
                                 <span class="input-group-text" id="basic-addon1">
                                     <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
@@ -162,19 +167,21 @@
                             </div>
                             <!-- Precio input -->
                             <div class="form-outline mb-4">
-                                <input id="PRECIO" type="text" id="form7Example2" class="form-control" onkeypress="return permite(event, 'num')" />
+                                <input id="PRECIO" type="text" id="form7Example2" class="form-control"
+                                    onkeypress="return permite(event, 'num')" />
                                 <label class="form-label" for="form7Example2">Precio (COP)</label>
                             </div>
                             <button class="btn" onclick="Verificar()" id="boton">
-                               Guardar
+                                Guardar
                             </button>
                         </div>
                     </div>
                     <div id="card_footer" class="card-footer">
                         <!-- Id input -->
                         <div class="input-group mt-3 mb-4">
-                            <input id="Valor" type="text" class="form-control" onkeypress="return permite(event, 'car-min-num')"
-                                placeholder="Id o Nombre del producto" aria-describedby="basic-addon1" />
+                            <input id="Valor" type="text" class="form-control"
+                                onkeypress="return permite(event, 'car-min-num')" placeholder="Id o Nombre del producto"
+                                aria-describedby="basic-addon1" />
                             <span class="input-group-text" id="Icono"><i class="fas fa-search"></i></span>
                         </div>
                         <button style="display:block" id="boton2" class="btn" onclick="Buscador()">
@@ -183,33 +190,38 @@
                         <button style="display: none;" id="boton3" class="btn" onclick="Regresar()">
                             Regresar
                         </button>
-                    
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="table-responsive">
         <table id="table" class="table table-bordered">
-        <thead id="Tabla_Header">
-        <tr>
-            <th id="btnid" scope="col"><i class="fas fa-tags fa-lg"></i> 
-            <i id="arriba2" style="display:none;" class="fas fa-angle-up fa-lg"></i>
-            <i id="abajo2" style="display:inline;" class="fas fa-angle-down fa-lg"></i>
-            </th>
-            <th id="btnproducto" scope="col">PRODUCTO <i id="arriba" style="display:none;" class="fas fa-angle-up fa-lg"></i> 
-            <i id="abajo" style="display:inline;" class="fas fa-angle-down fa-lg"></i>
-            </th>
-            <th id="btnprecio" scope="col">PRECIO (COP) <i id="arriba3" style="display:none;" class="fas fa-angle-up fa-lg"></i>
-            <i id="abajo3" style="display:inline;" class="fas fa-angle-down fa-lg"></i></th>
-            <th id="btncant" scope="col">CANTIDAD <i id="arriba4" style="display:none;" class="fas fa-angle-up fa-lg"></i>
-            <i id="abajo4" style="display:inline;" class="fas fa-angle-down fa-lg"></i></th>
-            <th scope="col">ACCIONES</th>
-        </tr>
-        </thead>
-        <tbody id="Tabla">
-        </tbody>
+            <thead id="Tabla_Header">
+                <tr>
+                    <th id="btnid" scope="col"><i class="fas fa-tags fa-lg"></i>
+                        <i id="arriba2" style="display:none;" class="fas fa-angle-up fa-lg"></i>
+                        <i id="abajo2" style="display:inline;" class="fas fa-angle-down fa-lg"></i>
+                    </th>
+                    <th id="btnproducto" scope="col">PRODUCTO <i id="arriba" style="display:none;"
+                            class="fas fa-angle-up fa-lg"></i>
+                        <i id="abajo" style="display:inline;" class="fas fa-angle-down fa-lg"></i>
+                    </th>
+                    <th id="btnprecio" scope="col">PRECIO (COP) <i id="arriba3" style="display:none;"
+                            class="fas fa-angle-up fa-lg"></i>
+                        <i id="abajo3" style="display:inline;" class="fas fa-angle-down fa-lg"></i>
+                    </th>
+                    <th id="btncant" scope="col">CANTIDAD <i id="arriba4" style="display:none;"
+                            class="fas fa-angle-up fa-lg"></i>
+                        <i id="abajo4" style="display:inline;" class="fas fa-angle-down fa-lg"></i>
+                    </th>
+                    <th scope="col">ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody id="Tabla">
+            </tbody>
         </table>
     </div>
     <!-- MDB -->
@@ -249,4 +261,5 @@
     <script src="Inventario1.js"></script>
     <script src="Organizacion.js"></script>
 </body>
+
 </html>

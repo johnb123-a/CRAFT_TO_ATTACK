@@ -1,80 +1,82 @@
-html.dark-mode #Body{
-    background-color:#212529;
+html.dark-mode #Body {
+  background-color: #212529;
 }
 
-html.dark-mode .Header{
-    background:rgba(27, 175, 145, 0.895);
+html.dark-mode .Header {
+  background: rgba(27, 175, 145, 0.895);
 }
-html.dark-mode #Devolver{
-    background-color: #dc3545;
-    color:white;
+html.dark-mode #Devolver {
+  background-color: #dc3545;
+  color: white;
 }
-html.dark-mode #Devolver:hover{
-    background-color: #F1948A;
-    color:white;
+html.dark-mode #Devolver:hover {
+  background-color: #f1948a;
+  color: white;
 }
-html.dark-mode #Marca{
-    color:rgb(0, 0, 0);
-    cursor: default;
+html.dark-mode #Marca {
+  color: rgb(0, 0, 0);
+  cursor: default;
 }
-html.dark-mode #Item{
-    color:rgb(0, 0, 0);
+html.dark-mode #Item {
+  color: rgb(0, 0, 0);
 }
-html.dark-mode  #dark-mode{
-  background-color:rgb(0, 0, 0);
+html.dark-mode #dark-mode {
+  background-color: rgb(0, 0, 0);
 }
-html.dark-mode  #MOD_DARK{
-    color:rgb(255, 255, 255);
-    Cursor:pointer;
+html.dark-mode #MOD_DARK {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 /*FORMULARIO*/
-html.dark-mode #sigup-correo,#sigup-password,#sigup-password2{
-    background:#f8f9fa;
-    color:black;
+html.dark-mode #sigup-correo,
+#sigup-password,
+#sigup-password2 {
+  background: #f8f9fa;
+  color: black;
 }
-html.dark-mode #Label-correo,#Label-pw,#Label-pw2{
-    color:#4d4d4d;
-    font-family:var(--font-family);
-    
+html.dark-mode #Label-correo,
+#Label-pw,
+#Label-pw2 {
+  color: #4d4d4d;
+  font-family: var(--font-family);
 }
-html.dark-mode  #Advertencia{
-    color:white;
-    font-family:var(--font-family);
+html.dark-mode #Advertencia {
+  color: white;
+  font-family: var(--font-family);
 }
-html.dark-mode #Cuenta{
-    color:white;
-    font-family:var(--font-family);
+html.dark-mode #Cuenta {
+  color: white;
+  font-family: var(--font-family);
 }
-html.dark-mode #Cuenta:hover{
-    color:#2ECC71;
-    transition: all 0.4s linear;
+html.dark-mode #Cuenta:hover {
+  color: #2ecc71;
+  transition: all 0.4s linear;
 }
-html.dark-mode #Boton_Sing_up{
-    background: #3498DB;
-    color:black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+html.dark-mode #Boton_Sing_up {
+  background: #3498db;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-html.dark-mode #Boton_Sing_up:hover{
-    background: #5DADE2;
-    transition: all 0.4s linear;
-    border-radius: 0.8rem;
+html.dark-mode #Boton_Sing_up:hover {
+  background: #5dade2;
+  transition: all 0.4s linear;
+  border-radius: 0.8rem;
 }
-html.dark-mode #Boton_Clean{
-    background: #dc3545;
-    color:black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+html.dark-mode #Boton_Clean {
+  background: #dc3545;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-html.dark-mode #Boton_Clean:hover{
-    background: #e01226;
-    transition: all 0.4s linear;
-    border-radius: 0.8rem;
+html.dark-mode #Boton_Clean:hover {
+  background: #e01226;
+  transition: all 0.4s linear;
+  border-radius: 0.8rem;
 }
 /*FOOTER*/
-html.dark-mode #Footer{
-    background: #A9DFBF;
+html.dark-mode #Footer {
+  background: #a9dfbf;
 }
-html.dark-mode #Sub-Footer{
-    background: rgba(27, 175, 145, 0.895);
-    color:black;
+html.dark-mode #Sub-Footer {
+  background: rgba(27, 175, 145, 0.895);
+  color: black;
 }
-

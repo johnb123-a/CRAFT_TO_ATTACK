@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="https://i.ibb.co/m66Mn6d/logoof.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="nofollow">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"rel="nofollow">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="nofollow">
     <!-- BOOSTRAP 
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
@@ -21,6 +22,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>CRAFT TO ATTACK ⚔️</title>
 </head>
+
 <body id="Body">
     <header>
         <nav class="navbar navbar-expand-sm Header">
@@ -31,12 +33,13 @@
                     <i class="fas fa-arrow-circle-left fa-lg"></i>
                 </a>
                 <a id="Marca" class="navbar-brand pe-1">
-                    <img src="https://i.ibb.co/N1031M7/logoof.png" alt="Logo de la empresa" class="d-inline-block" width="65rem"
-                        height="65rem">
+                    <img src="https://i.ibb.co/N1031M7/logoof.png" alt="Logo de la empresa" class="d-inline-block"
+                        width="65rem" height="65rem">
                     <b>CRAFT TO ⚔️</b>
                 </a>
-                <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-                    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
                         <i class="fas fa-bars"></i>
                     </span>
@@ -44,7 +47,8 @@
                 <div class="collapse navbar-collapse" id="navbarExample01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a id="Item" class="nav-link disabled" aria-disabled="true"><b>Que estas esperando para unirte al
+                            <a id="Item" class="nav-link disabled" aria-disabled="true"><b>Que estas esperando para
+                                    unirte al
                                     ataque</b></a>
                         </li>
                     </ul>
@@ -69,29 +73,32 @@
                         <form id="FORMULARIO" method="POST" class="p-1 ">
                             <!-- Email input -->
                             <div class="form-outline mt-4 mb-4 me-3 ms-3">
-                                <input type="email" id="login-correo" class="form-control" name="email" autocomplete="email"required />
+                                <input type="email" id="login-correo" class="form-control" name="email"
+                                    autocomplete="email" required />
                                 <label id="Label_correo" class="form-label" for="form1Example1">Email address</label>
                             </div>
-        
+
                             <!-- Password input -->
                             <div class="form-outline mt-4 mb-4 me-3 ms-3">
                                 <input type="password" id="login-password" class="form-control" name="pw" />
-                                <label id="Label_pw"class="form-label" for="form1Example2">Password</label>
+                                <label id="Label_pw" class="form-label" for="form1Example2">Password</label>
                             </div>
-        
+
                             <!-- 2 column grid layout for inline styling -->
                             <div class="row mb-4">
                                 <div class="col d-flex justify-content-center">
-                                    <a id="Recuperacion" class="recuperar" onclick="cambio_pw()"><b><i>Olvide mi contraseña <i
-                                                    style="display: none;" id="candado" class="fas fa-unlock-alt fa-lg"></i> <i
-                                                    style="display:inline" id="candado2" class="fas fa-lock fa-lg"></i></i></b>
+                                    <a id="Recuperacion" class="recuperar" onclick="cambio_pw()"><b><i>Olvide mi
+                                                contraseña <i style="display: none;" id="candado"
+                                                    class="fas fa-unlock-alt fa-lg"></i> <i style="display:inline"
+                                                    id="candado2" class="fas fa-lock fa-lg"></i></i></b>
                                     </a>
                                 </div>
                             </div>
-        
+
                             <!-- Submit button -->
                             <div class="me-5 ms-5">
-                             <button id="Boton_Login" type="submit" class="btn btn-primary btn-block p-3">Login</button>
+                                <button id="Boton_Login" type="submit"
+                                    class="btn btn-primary btn-block p-3">Login</button>
                             </div>
                         </form>
                     </div>
@@ -99,22 +106,28 @@
                 <div class="col-md">
                     <div class="p-3">
                         <ul class="navbar-nav flex-column">
-                            <span class="d-block p-2 TITULO"><b>Acceder con <i class="fas fa-user-check fa-lg"></i></b></span>
+                            <span class="d-block p-2 TITULO"><b>Acceder con <i
+                                        class="fas fa-user-check fa-lg"></i></b></span>
                             <li class="nav-item mt-4 ms-5 me-5 mb-1">
-                                <span type="button"  style="background-color: #dd4b39;" id="Googlelogin"  class="btn btn-primary d-block p-3"><i class="fab fa-google-plus-g pe-3 fa-lg"></i>Login with Google</span>
+                                <span type="button" style="background-color: #dd4b39;" id="Googlelogin"
+                                    class="btn btn-primary d-block p-3"><i
+                                        class="fab fa-google-plus-g pe-3 fa-lg"></i>Login with Google</span>
                             </li>
                             <li class="nav-item mt-4 ms-5 me-5">
-                                <span type="button" style="background-color: #3b5998;" id="Facebooklogin" class="btn btn-primary d-block p-3">
+                                <span type="button" style="background-color: #3b5998;" id="Facebooklogin"
+                                    class="btn btn-primary d-block p-3">
                                     <i class="fab fa-facebook-f pe-3 fa-lg"></i>Login with Facebook</span>
                             </li>
                             <li class="nav-item mt-4 ms-5 me-5">
-                                <span type="button" style="background-color: #55acee;" id="Twitterlogin" class="btn btn-primary d-block p-3">
+                                <span type="button" style="background-color: #55acee;" id="Twitterlogin"
+                                    class="btn btn-primary d-block p-3">
                                     <i class="fab fa-twitter pe-3 fa-lg"></i>Login with Twitter</span>
                             </li>
                             <li id="Tiendabtn" style="display: none;" class="nav-item mt-4 ms-5 me-5">
                                 <a href="TIENDA.html">
-                                <span type="button" style="background-color: rgb(255, 0, 0);" class="btn btn-primary d-block p-3">
-                                       Ingresar Tienda</span>
+                                    <span type="button" style="background-color: rgb(255, 0, 0);"
+                                        class="btn btn-primary d-block p-3">
+                                        Ingresar Tienda</span>
                                 </a>
                             </li>
                         </ul>
@@ -122,7 +135,7 @@
                 </div>
             </div>
         </div>
-        </main>
+    </main>
     </main>
 </body>
 
@@ -159,19 +172,19 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-        //firebase.analytics();
+    //firebase.analytics();
     const auth = firebase.auth()
     const fs = firebase.firestore()
 </script>
 <script src="main2.js"></script>
-<script> 
+<script>
     auth.onAuthStateChanged((user) => {
         if (user) {
             document.getElementById('Tiendabtn').style.display = 'inline';
-        }else {
+        } else {
             document.getElementById('Tiendabtn').style.display = 'none';
         }
-    });    
+    });
 </script>
+
 </html>
-    

@@ -1,54 +1,52 @@
-
-html.dark-mode body{
+html.dark-mode body {
   background: rgb(0, 0, 0);
 }
-html.dark-mode .Header{
+html.dark-mode .Header {
   display: block;
-  width:auto;
+  width: auto;
   align-items: center;
   background-color: rgb(0, 98, 255);
   padding: 1.5rem;
-  border: 1.5rem  rgb(255, 255, 255);
+  border: 1.5rem rgb(255, 255, 255);
   border-style: double;
   color: rgb(255, 255, 255);
 }
-html.dark-mode .Header a{
-  text-decoration:none;
-  color:rgb(0, 0, 0);
+html.dark-mode .Header a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
   border: 0.3rem solid rgb(42, 42, 42);
-  background-color:rgb(107, 107, 107);
+  background-color: rgb(107, 107, 107);
   font-size: 1.5rem;
-  margin-top:-0.5rem;
-
+  margin-top: -0.5rem;
 }
-html.dark-mode .Header a:hover{
+html.dark-mode .Header a:hover {
   background-color: rgb(151, 153, 153);
   border: 0.3rem solid rgb(42, 42, 42);
   border-style: dotted;
   transition: all 0.4s linear;
   border-radius: 1.2rem;
 }
-html.dark-mode .btns{
+html.dark-mode .btns {
   background-color: rgb(0, 98, 255);
-  text-decoration:none;
-  padding:0.5rem;
+  text-decoration: none;
+  padding: 0.5rem;
   width: 100%;
-  text-align:center;
+  text-align: center;
   font-size: 1rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
-html.dark-mode .dark-mode-button{
+html.dark-mode .dark-mode-button {
   padding: 0rem 0rem 0rem 1rem;
   font-size: 2.6rem;
   transition: all 0.4s linear;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
-html.dark-mode .dark-mode-button:hover{
+html.dark-mode .dark-mode-button:hover {
   color: rgb(95, 95, 95);
   cursor: pointer;
 }
-html.dark-mode .container{
+html.dark-mode .container {
   margin: 1rem;
   width: auto;
   height: auto;
@@ -59,8 +57,8 @@ html.dark-mode .container{
   gap: 1rem;
   color: rgb(255, 255, 255);
 }
-html.dark-mode #column{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
@@ -68,8 +66,8 @@ html.dark-mode #column{
   background-color: rgb(49, 47, 47);
 }
 
-html.dark-mode #column2{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column2 {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
@@ -77,8 +75,8 @@ html.dark-mode #column2{
   background-color: rgb(49, 47, 47);
 }
 
-html.dark-mode #column3{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column3 {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
@@ -86,8 +84,8 @@ html.dark-mode #column3{
   background-color: rgb(49, 47, 47);
 }
 
-html.dark-mode #column4{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column4 {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
@@ -95,8 +93,8 @@ html.dark-mode #column4{
   background-color: rgb(49, 47, 47);
 }
 
-html.dark-mode #column5{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column5 {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
@@ -104,8 +102,8 @@ html.dark-mode #column5{
   background-color: rgb(49, 47, 47);
 }
 
-html.dark-mode #column6{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column6 {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
@@ -113,8 +111,8 @@ html.dark-mode #column6{
   background-color: rgb(49, 47, 47);
 }
 
-html.dark-mode #column7{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column7 {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
@@ -122,8 +120,8 @@ html.dark-mode #column7{
   background-color: rgb(49, 47, 47);
 }
 
-html.dark-mode #column8{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column8 {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
@@ -131,8 +129,8 @@ html.dark-mode #column8{
   background-color: rgb(49, 47, 47);
 }
 
-html.dark-mode #column9{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column9 {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
@@ -140,8 +138,8 @@ html.dark-mode #column9{
   background-color: rgb(49, 47, 47);
 }
 
-html.dark-mode #column10{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column10 {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
@@ -149,17 +147,11 @@ html.dark-mode #column10{
   background-color: rgb(49, 47, 47);
 }
 
-html.dark-mode #column11{
-  border:0.2rem solid rgb(255, 255, 255);
+html.dark-mode #column11 {
+  border: 0.2rem solid rgb(255, 255, 255);
   border-style: dashed;
   width: auto;
   height: auto;
   grid-column: 3 / 5;
   background-color: rgb(49, 47, 47);
 }
-
-
-
-
-
-

@@ -1,108 +1,107 @@
-
-html.dark-mode #Body{
-    background-color:#212529;
+html.dark-mode #Body {
+  background-color: #212529;
 }
-html.dark-mode #card_header{
-    background-color: rgba(27, 175, 145, 0.895);
+html.dark-mode #card_header {
+  background-color: rgba(27, 175, 145, 0.895);
 }
-html.dark-mode #card_body{
-    background-color:#919294;
+html.dark-mode #card_body {
+  background-color: #919294;
 }
-html.dark-mode #card_footer{
-    background-color:#919294;
+html.dark-mode #card_footer {
+  background-color: #919294;
 }
- html.dark-mode #ID{
-   background-color: #dfdfdf;
-}
-html.dark-mode #PRODUCTO{
-  background-color: #dfdfdf;
-   margin-top: 0.3rem;
-}
-html.dark-mode #PRECIO{
+html.dark-mode #ID {
   background-color: #dfdfdf;
 }
-html.dark-mode #CANTIDAD{
-   background-color: #dfdfdf;
+html.dark-mode #PRODUCTO {
+  background-color: #dfdfdf;
+  margin-top: 0.3rem;
 }
-html.dark-mode #Devolver{
-    background-color: #dc3545;
-    color:white;
+html.dark-mode #PRECIO {
+  background-color: #dfdfdf;
 }
-html.dark-mode #Devolver:hover{
-    transition: all 0.4s linear;
-    background-color: #ff1900;
-    color:white;
+html.dark-mode #CANTIDAD {
+  background-color: #dfdfdf;
+}
+html.dark-mode #Devolver {
+  background-color: #dc3545;
+  color: white;
+}
+html.dark-mode #Devolver:hover {
+  transition: all 0.4s linear;
+  background-color: #ff1900;
+  color: white;
 }
 
-html.dark-mode #dark-mode{
-  background-color:rgb(255, 255, 255);
+html.dark-mode #dark-mode {
+  background-color: rgb(255, 255, 255);
   margin-left: 2.9rem;
   height: 2.2rem;
 }
-html.dark-mode #MOD_DARK{
-    color:rgb(0, 0, 0);
-    Cursor:pointer;
+html.dark-mode #MOD_DARK {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
 }
-html.dark-mode #dark-mode:hover{
-    transition: all 0.4s linear;
-    border-radius: 0.8rem;
+html.dark-mode #dark-mode:hover {
+  transition: all 0.4s linear;
+  border-radius: 0.8rem;
 }
 
-html.dark-mode #btn_Edit{
-    font-family: var(--font-family);
-    background-color: rgb(255, 230, 0);
-    color: black; 
+html.dark-mode #btn_Edit {
+  font-family: var(--font-family);
+  background-color: rgb(255, 230, 0);
+  color: black;
 }
-html.dark-mode #btn_Delete{
-    font-family: var(--font-family);
-    background-color: rgb(255, 0, 0);
-    padding-top: 0.7rem;
-    color: black;
+html.dark-mode #btn_Delete {
+  font-family: var(--font-family);
+  background-color: rgb(255, 0, 0);
+  padding-top: 0.7rem;
+  color: black;
 }
-html.dark-mode #Tabla_Header{
-    font-family: var(--font-family);
-    text-align: center;
-    color: white;
+html.dark-mode #Tabla_Header {
+  font-family: var(--font-family);
+  text-align: center;
+  color: white;
 }
-html.dark-mode #Tabla_Header th:hover{
-    background-color: rgb(124, 124, 124);
-    transition: all 0.4s linear;
-    cursor:pointer;
+html.dark-mode #Tabla_Header th:hover {
+  background-color: rgb(124, 124, 124);
+  transition: all 0.4s linear;
+  cursor: pointer;
 }
-html.dark-mode #table{
-    border: rgba(27, 175, 145, 0.895);
+html.dark-mode #table {
+  border: rgba(27, 175, 145, 0.895);
 }
-html.dark-mode #Tabla{
-   font-family: var(--font-family);
-   color: rgb(255, 255, 255);
+html.dark-mode #Tabla {
+  font-family: var(--font-family);
+  color: rgb(255, 255, 255);
 }
-html.dark-mode #Tabla tr:hover{
-    background-color: rgb(124, 124, 124);
-    transition: all 0.4s linear;
-    cursor:default;
+html.dark-mode #Tabla tr:hover {
+  background-color: rgb(124, 124, 124);
+  transition: all 0.4s linear;
+  cursor: default;
 }
-html.dark-mode #boton{
-    background-color: rgb(3, 187, 43); 
-    color: aliceblue;
+html.dark-mode #boton {
+  background-color: rgb(3, 187, 43);
+  color: aliceblue;
 }
-html.dark-mode #boton:hover{
-    background-color: rgb(49, 97, 230); 
-    transition: all 0.4s linear;
-    color: aliceblue;
+html.dark-mode #boton:hover {
+  background-color: rgb(49, 97, 230);
+  transition: all 0.4s linear;
+  color: aliceblue;
 }
-html.dark-mode #boton2{
-    background-color: rgb(3, 187, 43); 
-    color: aliceblue;
+html.dark-mode #boton2 {
+  background-color: rgb(3, 187, 43);
+  color: aliceblue;
 }
-html.dark-mode #boton2:hover{
-    background-color: rgb(49, 97, 230); 
-    transition: all 0.4s linear;
-    color: aliceblue;
+html.dark-mode #boton2:hover {
+  background-color: rgb(49, 97, 230);
+  transition: all 0.4s linear;
+  color: aliceblue;
 }
-html.dark-mode #boton3{
-    background-color: rgb(251, 146, 8); 
+html.dark-mode #boton3 {
+  background-color: rgb(251, 146, 8);
 }
-html.dark-mode #Icono{
-    background: rgba(27, 175, 145, 0.895);
-    color:white;
+html.dark-mode #Icono {
+  background: rgba(27, 175, 145, 0.895);
+  color: white;
 }
