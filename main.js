@@ -36,9 +36,14 @@ singupForm.addEventListener("submit", (e) => {
           throw new Error("La contraseña debe tener como minimo 6 caracteres");
         }
       } else {
-        throw new Error(
-          "El email que tratas de ingresar ya se encuentra en uso"
+        swal(
+          "Ohhh no!",
+          "El email que tratas de ingresar ya se encuentra en uso!",
+          "error"
         );
+          throw new Error(
+            "El email que tratas de ingresar ya se encuentra en uso"
+          );
       }
     }
   } catch (error) {
