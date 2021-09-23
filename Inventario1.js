@@ -13,8 +13,17 @@ function Buscador() {
             <td>${doc.data().Nombre_del_producto}</td>
             <td>${doc.data().Precio}</td>
             <td>${doc.data().Productos_Disponibles}</td>       
-            </tr>
-            `;
+            <td style="display:none">${doc.id} </td>
+             <td> <button id="btn_Edit" onclick="editar('${doc.id}','${
+            doc.data().Nombre_del_producto
+          }','${doc.data().Precio}','${
+            doc.data().Productos_Disponibles
+          }')" class="btn"><b>EDITAR</b></button>  
+            <button id="btn_Delete" onclick="eliminar('${
+              doc.id
+            }')" class="btn btn-sm"> <i class="fas fa-trash-alt"></i> </button> </td>
+        </tr>
+        `;
           //console.log(doc.id, " => ", doc.data().Id);
           //console.log(doc.id, " => ", doc.data().Nombre_del_producto);
           //console.log(doc.id, " => ", doc.data().Precio);
@@ -43,8 +52,17 @@ function Buscador() {
             <td>${doc.data().Nombre_del_producto}</td>
             <td>${doc.data().Precio}</td>
             <td>${doc.data().Productos_Disponibles}</td>       
-            </tr>
-            `;
+            <td style="display:none">${doc.id} </td>
+             <td> <button id="btn_Edit" onclick="editar('${doc.id}','${
+            doc.data().Nombre_del_producto
+          }','${doc.data().Precio}','${
+            doc.data().Productos_Disponibles
+          }')" class="btn"><b>EDITAR</b></button>  
+            <button id="btn_Delete" onclick="eliminar('${
+              doc.id
+            }')" class="btn btn-sm"> <i class="fas fa-trash-alt"></i> </button> </td>
+        </tr>
+        `;
           //console.log(doc.id, " => ", doc.data().Id);
           //console.log(doc.id, " => ", doc.data().Nombre_del_producto);
           //console.log(doc.id, " => ", doc.data().Precio);
@@ -79,11 +97,12 @@ function Regresar() {
             <td>${doc.data().Nombre_del_producto}</td>
             <td>${doc.data().Precio}</td>
             <td>${doc.data().Productos_Disponibles}</td>
+            <td style="display:none">${doc.id} </td>
              <td> <button id="btn_Edit" onclick="editar('${doc.id}','${
-      doc.data().Nombre_del_producto
-    }','${doc.data().Precio}','${
-      doc.data().Productos_Disponibles
-    }')" class="btn"><b>EDITAR</b></button>  
+        doc.data().Nombre_del_producto
+      }','${doc.data().Precio}','${
+        doc.data().Productos_Disponibles
+      }')" class="btn"><b>EDITAR</b></button>  
             <button id="btn_Delete" onclick="eliminar('${
               doc.id
             }')" class="btn btn-sm"> <i class="fas fa-trash-alt"></i> </button> </td>
