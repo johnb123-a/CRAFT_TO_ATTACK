@@ -123,7 +123,6 @@ function editar(id, Producto, Precio, Cantidad) {
     var Producto = document.getElementById("PRODUCTO").value;
     var Precio = document.getElementById("PRECIO").value;
     var Cantidad = document.getElementById("CANTIDAD").value;
-
     return washingtonRef
       .update({
         Nombre_del_producto: Producto,
@@ -144,12 +143,12 @@ function editar(id, Producto, Precio, Cantidad) {
           const Precios = document.getElementById("PRECIO").value;
           const Cantidad = document.getElementById("CANTIDAD").value;
           db.collection("PRODUCTS")
-            .doc()
-            .set({
-              Id: Id,
-              Nombre_del_producto: Producto,
-              Precio: Precios,
-              Productos_Disponibles: Cantidad,
+          .doc()
+          .set({
+            Id: Id,
+            Nombre_del_producto: Producto,
+            Precio: Precios,
+            Productos_Disponibles: Cantidad,
             })
             .then((docRef) => {
               console.log("Document written with ID: ", docRef.id);
@@ -157,15 +156,15 @@ function editar(id, Producto, Precio, Cantidad) {
               document.getElementById("PRODUCTO").value = "";
               document.getElementById("PRECIO").value = "";
               document.getElementById("CANTIDAD").value = "";
-            })
-            .catch((error) => {
-              console.error("Error adding document: ", error);
-            });
-          taskForm.reset();
-        };
+              })
+              .catch((error) => {
+                console.error("Error adding document: ", error);
+              });
+                taskForm.reset();
+              };
       })
       .catch((error) => {
-        // The document probably doesn't exist.
+         // The document probably doesn't exist.
         console.error("Error updating document: ", error);
       });
   };

@@ -28,6 +28,9 @@ singupForm.addEventListener("submit", (e) => {
                   button: "OK",
                 });
                 console.log("Usuario creado Bienvenido:", singupEmail.value);
+                setTimeout(function () {
+                  window.location.href = "Login.html";
+                }, 3000);
               });
           } else {
             throw new Error("Las contraseñas no coinciden");
@@ -36,11 +39,6 @@ singupForm.addEventListener("submit", (e) => {
           throw new Error("La contraseña debe tener como minimo 6 caracteres");
         }
       } else {
-        swal(
-          "Ohhh no!",
-          "El email que tratas de ingresar ya se encuentra en uso!",
-          "error"
-        );
           throw new Error(
             "El email que tratas de ingresar ya se encuentra en uso"
           );
