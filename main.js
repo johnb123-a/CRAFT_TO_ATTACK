@@ -9,11 +9,6 @@ singupForm.addEventListener("submit", (e) => {
   singupPassword = document.querySelector("#sigup-password").value;
   singupPassword2 = document.querySelector("#sigup-password2").value;
   try {
-    const user = firebase.auth().currentUser;
-    if (user !== null) {
-      const email = user.email;
-
-      if (email !== singupEmail) {
         if (singupPassword.length > 6 || singupPassword2.length > 6) {
           if (singupPassword == singupPassword2) {
             auth
@@ -28,9 +23,6 @@ singupForm.addEventListener("submit", (e) => {
                   button: "OK",
                 });
                 console.log("Usuario creado Bienvenido:", singupEmail.value);
-                setTimeout(function () {
-                  window.location.href = "Login.html";
-                }, 3000);
               });
           } else {
             throw new Error("Las contraseñas no coinciden");
@@ -38,13 +30,7 @@ singupForm.addEventListener("submit", (e) => {
         } else {
           throw new Error("La contraseña debe tener como minimo 6 caracteres");
         }
-      } else {
-          throw new Error(
-            "El email que tratas de ingresar ya se encuentra en uso"
-          );
-      }
-    }
   } catch (error) {
-    swal("Oops", "Se produjo el siguiente " + error, "error");
+    swal("Oops", "Se produjo el siguiente " + (error), "error");
   }
 });
